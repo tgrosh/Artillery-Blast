@@ -42,6 +42,7 @@ public class wind : MonoBehaviour {
             windSpeedIndicatorImage.color = lowSpeedColor;
         }
         windSpeedText.color = new Color(windSpeedImage.color.r / 3, windSpeedImage.color.g / 3, windSpeedImage.color.b / 3);
+        windSpeedText.text = magnitude.x + " mph";
     }
 	
 	// Update is called once per frame
