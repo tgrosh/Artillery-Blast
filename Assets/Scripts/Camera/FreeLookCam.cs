@@ -80,7 +80,7 @@ namespace UnityStandardAssets.Cameras
             m_LookAngle += x*m_TurnSpeed;
 
             // Rotate the rig (the root object) around Y axis only:
-            m_TransformTargetRot = Quaternion.Euler(0f, m_LookAngle, 0f);
+            m_TransformTargetRot = Quaternion.Euler(0f, Mathf.Clamp(m_LookAngle, -m_TiltMin, m_TiltMax), 0f);
 
             if (m_VerticalAutoReturn)
             {
