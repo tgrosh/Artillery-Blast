@@ -743,7 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1152491a493017e42adca7145eb87f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: {x: 18.33, y: 0, z: 0}
+  magnitude: {x: 5, y: 0, z: 0}
+  windScale: 0
   mediumSpeedThreshold: 10
   highSpeedThreshold: 50
   lowSpeedColor: {r: 0, g: 0.83823526, b: 0.075152114, a: 1}

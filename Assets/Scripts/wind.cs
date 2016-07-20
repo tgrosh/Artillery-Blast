@@ -6,6 +6,7 @@ using System;
 
 public class wind : MonoBehaviour {
     public Vector3 magnitude;
+    public float windScale;
     public float mediumSpeedThreshold;
     public float highSpeedThreshold;
     public Color lowSpeedColor;
@@ -52,7 +53,7 @@ public class wind : MonoBehaviour {
             if (!cannonBallsAffected.Contains(cannonBall))
             {
                 cannonBallsAffected.Add(cannonBall);
-                cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(magnitude);
+                cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(magnitude * windScale);
             }            
         }
 	}
