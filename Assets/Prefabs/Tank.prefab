@@ -296,7 +296,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107158}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.0000023245811}
-  m_LocalPosition: {x: 3.3, y: 0.314, z: 0}
+  m_LocalPosition: {x: 4.83, y: 1.41, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 179.9997, z: 0}
   m_Children:
@@ -1229,6 +1229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 158686, guid: 9a5c9de36c2bae04d8bf601f603f07ac, type: 2}
+  cannonFirePrefab: {fileID: 11400008, guid: 25558fbc0540a7440a38db6a9b7003c7, type: 2}
+  cannonFireSound: {fileID: 8300000, guid: 9c1b7dcf2b049ce42a691785b179ecfa, type: 3}
 --- !u!136 &13691762
 CapsuleCollider:
   m_ObjectHideFlags: 1

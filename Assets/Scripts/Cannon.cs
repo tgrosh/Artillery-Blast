@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class Cannon : MonoBehaviour {
     public GameObject projectilePrefab;
+    public Detonator cannonFirePrefab;
+    public AudioClip cannonFireSound;
+
     Slider angleSlider;
     Slider powerSlider;
     Transform spawner;
@@ -22,6 +25,8 @@ public class Cannon : MonoBehaviour {
 
     public void Fire()
     {
+        AudioSource.PlayClipAtPoint(cannonFireSound, spawner.position);
+        Instantiate(cannonFirePrefab, spawner.position, gameObject.transform.localRotation);
         GameObject projectile = (GameObject)Instantiate(projectilePrefab, spawner.position, gameObject.transform.localRotation);
         projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.right * powerSlider.value, ForceMode.Impulse);
     }

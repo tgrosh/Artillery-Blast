@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11416608}
   m_Layer: 0
-  m_Name: CannonBallGroundExplosion
+  m_Name: CannonFireEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 1
-  color: {r: 0.7568628, g: 0.65882355, b: 0.39607847, a: 0.478}
+  color: {r: 0.5147059, g: 0.5147059, b: 0.5147059, a: 0}
   explodeOnStart: 1
   duration: 2
   detail: 1
@@ -101,22 +101,22 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 3
+  size: 1
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 7
+  duration: 3
   timeScale: 1
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 0.75735295, g: 0.65749913, b: 0.3953828, a: 0.103}
+  color: {r: 0.5441177, g: 0.5441177, b: 0.5441177, a: 0.491}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 0, y: 500, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   detailThreshold: 0
   fireballAMaterial: {fileID: 2100000, guid: f892253ab15f74115b6d10bd736b2e29, type: 2}
   fireballBMaterial: {fileID: 2100000, guid: 36aa334bd0865ca459c9b3dfbbaf7198, type: 2}
