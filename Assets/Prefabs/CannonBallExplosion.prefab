@@ -59,7 +59,7 @@ MonoBehaviour:
   explodeDelayMin: 0.14485279
   explodeDelayMax: 0.16242638
   startDuration: 2
-  duration: 3
+  duration: 1
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 3
+  duration: 1
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -139,7 +139,7 @@ MonoBehaviour:
   explodeDelayMin: 0.06
   explodeDelayMax: 0.14999999
   startDuration: 2
-  duration: 3
+  duration: 1
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -180,7 +180,7 @@ MonoBehaviour:
   upwardsBias: 2
   destroyTime: 7
   useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 20, z: 0}
   fireballAMaterial: {fileID: 0}
   fireballBMaterial: {fileID: 0}
   smokeAMaterial: {fileID: 0}

@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 1
-  color: {r: 0.7568628, g: 0.65882355, b: 0.39607847, a: 0.478}
+  color: {r: 0.75735295, g: 0.6515847, b: 0.30628246, a: 0.978}
   explodeOnStart: 1
   duration: 2
   detail: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 0.75735295, g: 0.65749913, b: 0.3953828, a: 0.103}
+  color: {r: 1, g: 0, b: 0, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
