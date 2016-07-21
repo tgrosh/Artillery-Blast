@@ -6,28 +6,27 @@ public class Cannon : MonoBehaviour {
     public GameObject projectilePrefab;
     public Detonator cannonFirePrefab;
     public AudioClip cannonFireSound;
+    public Transform projectileSpawner;
 
     Slider angleSlider;
-    Slider powerSlider;
-    Transform spawner;
+    Slider powerSlider;    
 
     // Use this for initialization
     void Start () {
         angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
         powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();
-        spawner = transform.FindChild("ProjectileSpawner");
     }
 	
 	// Update is called once per frame
-	void Update () {        
-        transform.localRotation = Quaternion.Euler(new Vector3(0, 0, angleSlider.value));
+	void Update () {
+        transform.localRotation = Quaternion.Euler(new Vector3(-angleSlider.value, 0, 0));
 	}
 
     public void Fire()
     {
-        AudioSource.PlayClipAtPoint(cannonFireSound, spawner.position);
-        Instantiate(cannonFirePrefab, spawner.position, gameObject.transform.localRotation);
-        GameObject projectile = (GameObject)Instantiate(projectilePrefab, spawner.position, gameObject.transform.localRotation);
-        projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.right * powerSlider.value, ForceMode.Impulse);
+        AudioSource.PlayClipAtPoint(cannonFireSound, projectileSpawner.position);
+        Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+        GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+        projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
     }
 }

@@ -35,14 +35,12 @@ public class CannonBall : MonoBehaviour {
                 }
             }
             
-            Debug.Log("Collision with " + col.gameObject.name);
             Explode(explosionPrefab, 1f);
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("Collision with " + col.gameObject.name);
         Explode(explosionGroundPrefab, .5f);
     }
 
