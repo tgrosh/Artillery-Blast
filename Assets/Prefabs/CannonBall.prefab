@@ -28,6 +28,7 @@ GameObject:
   - 4: {fileID: 425890}
   - 54: {fileID: 5450364}
   - 114: {fileID: 11448296}
+  - 114: {fileID: 11455388}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -121,11 +122,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea4a4764ae6c794186d846882730ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionRadius: 5
-  explosionPrefab: {fileID: 11400008, guid: cb42009d87acaec4195cefaeedec95de, type: 2}
-  explosionGroundPrefab: {fileID: 11400008, guid: bc71eb29ea0a2be4f89fb9edff5d9e46,
-    type: 2}
+--- !u!114 &11455388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1a9daec7ba2b742afda640d8a73a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detonatorPrefab: {fileID: 11400008, guid: bc71eb29ea0a2be4f89fb9edff5d9e46, type: 2}
   explosionAudioClip: {fileID: 8300000, guid: 542b6e352c863144f8d91b43bc8ccba7, type: 3}
+  explosionVolume: 0.5
 --- !u!135 &13525604
 SphereCollider:
   m_ObjectHideFlags: 1
