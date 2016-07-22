@@ -33,7 +33,7 @@ GameObject:
   - 54: {fileID: 5457082}
   m_Layer: 0
   m_Name: BodyLeft
-  m_TagString: Untagged
+  m_TagString: PlayerColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +52,7 @@ GameObject:
   - 54: {fileID: 5468466}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: PlayerColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - 54: {fileID: 5443468}
   m_Layer: 0
   m_Name: BodyRight
-  m_TagString: Untagged
+  m_TagString: PlayerColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,7 @@ GameObject:
   - 4: {fileID: 477806}
   - 95: {fileID: 9571090}
   - 114: {fileID: 11456682}
+  - 114: {fileID: 11498348}
   m_Layer: 0
   m_Name: Tanque
   m_TagString: Untagged
@@ -178,7 +179,7 @@ GameObject:
   - 54: {fileID: 5423290}
   m_Layer: 0
   m_Name: BodyCenter
-  m_TagString: Untagged
+  m_TagString: PlayerColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -960,6 +961,18 @@ MonoBehaviour:
   cannonFirePrefab: {fileID: 11400008, guid: 25558fbc0540a7440a38db6a9b7003c7, type: 2}
   cannonFireSound: {fileID: 8300000, guid: 9c1b7dcf2b049ce42a691785b179ecfa, type: 3}
   projectileSpawner: {fileID: 473312}
+--- !u!114 &11498348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d40cbb4c765b274d8d2f14e3e75f612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0.46206856, b: 1, a: 1}
 --- !u!136 &13621074
 CapsuleCollider:
   m_ObjectHideFlags: 1
