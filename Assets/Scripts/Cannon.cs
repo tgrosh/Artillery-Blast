@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class Cannon : MonoBehaviour {
     public GameObject projectilePrefab;
     public Detonator cannonFirePrefab;
-    public AudioClip cannonFireSound;
+    public AudioSource cannonFireSound;
+    public AudioSource cannonReloadSound;
     public Transform projectileSpawner;
     public float reloadTime;
     public Image reloadImage;
@@ -35,6 +36,7 @@ public class Cannon : MonoBehaviour {
 
             if (currentLoadTime >= reloadTime)
             {
+                cannonReloadSound.Stop();
                 reloading = false;
                 currentLoadTime = 0f;
                 reloadImage.transform.parent.gameObject.SetActive(false);
@@ -46,12 +48,13 @@ public class Cannon : MonoBehaviour {
     {
         if (!reloading)
         {
-            AudioSource.PlayClipAtPoint(cannonFireSound, projectileSpawner.position);
+            cannonFireSound.Play();
             Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
 
             reloading = true;
+            cannonReloadSound.Play();
         }
     }
 }

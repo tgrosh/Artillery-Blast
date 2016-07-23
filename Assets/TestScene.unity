@@ -1815,10 +1815,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 22366896, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 11456738, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
       propertyPath: angleSlider
       value: 
@@ -1827,54 +1823,6 @@ Prefab:
       propertyPath: powerSlider
       value: 
       objectReference: {fileID: 553136500}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.23991364
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.23991364
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.23991364
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22467320, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
   m_IsPrefabParent: 0
@@ -5155,6 +5103,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   cannonFirePrefab: {fileID: 0}
   cannonFireSound: {fileID: 0}
+  cannonReloadSound: {fileID: 0}
   projectileSpawner: {fileID: 0}
   reloadTime: 3
   reloadImage: {fileID: 987681454}
