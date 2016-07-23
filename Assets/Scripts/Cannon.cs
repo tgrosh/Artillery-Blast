@@ -7,9 +7,12 @@ public class Cannon : MonoBehaviour {
     public Detonator cannonFirePrefab;
     public AudioClip cannonFireSound;
     public Transform projectileSpawner;
+    public float reloadTime;
 
     Slider angleSlider;
-    Slider powerSlider;    
+    Slider powerSlider;
+    float currentLoadTime = 0f;
+    bool reloading; 
 
     // Use this for initialization
     void Start () {
@@ -20,13 +23,29 @@ public class Cannon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.localRotation = Quaternion.Euler(new Vector3(-angleSlider.value, 0, 0));
+
+        if (reloading)
+        {
+            currentLoadTime += Time.deltaTime;
+
+            if (currentLoadTime >= reloadTime)
+            {
+                reloading = false;
+                currentLoadTime = 0f;
+            }
+        }
 	}
 
     public void Fire()
     {
-        AudioSource.PlayClipAtPoint(cannonFireSound, projectileSpawner.position);
-        Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
-        GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
-        projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
+        if (!reloading)
+        {
+            AudioSource.PlayClipAtPoint(cannonFireSound, projectileSpawner.position);
+            Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+            GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+            projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
+
+            reloading = true;
+        }
     }
 }
