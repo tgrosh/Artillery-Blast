@@ -12,6 +12,9 @@ public class wind : MonoBehaviour {
     public Color lowSpeedColor;
     public Color mediumSpeedColor;
     public Color highSpeedColor;
+    public AudioSource windLowAudio;
+    public AudioSource windMediumAudio;
+    public AudioSource windHighAudio;
 
     List<CannonBall> cannonBallsAffected = new List<CannonBall>();
     Image windSpeedImage;
@@ -32,15 +35,18 @@ public class wind : MonoBehaviour {
         if (Math.Abs(magnitude.x) > highSpeedThreshold)
         {
             windSpeedImage.color = highSpeedColor;
-            windSpeedIndicatorImage.color = highSpeedColor;                        
+            windSpeedIndicatorImage.color = highSpeedColor;
+            windHighAudio.Play();                      
         } else if (Math.Abs(magnitude.x) > mediumSpeedThreshold)
         {
             windSpeedImage.color = mediumSpeedColor;
             windSpeedIndicatorImage.color = mediumSpeedColor;
+            windMediumAudio.Play();
         } else
         {
             windSpeedImage.color = lowSpeedColor;
             windSpeedIndicatorImage.color = lowSpeedColor;
+            windLowAudio.Play();
         }
         windSpeedText.color = new Color(windSpeedImage.color.r / 3, windSpeedImage.color.g / 3, windSpeedImage.color.b / 3);
         windSpeedText.text = magnitude.x + " mph";
