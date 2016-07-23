@@ -8,30 +8,36 @@ public class Cannon : MonoBehaviour {
     public AudioClip cannonFireSound;
     public Transform projectileSpawner;
     public float reloadTime;
+    public Image reloadImage;
+    public Slider angleSlider;
+    public Slider powerSlider;
 
-    Slider angleSlider;
-    Slider powerSlider;
     float currentLoadTime = 0f;
     bool reloading; 
 
     // Use this for initialization
     void Start () {
-        angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
-        powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();
+        reloadImage.transform.parent.gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localRotation = Quaternion.Euler(new Vector3(-angleSlider.value, 0, 0));
+        if (angleSlider != null)
+        {
+            transform.localRotation = Quaternion.Euler(new Vector3(-angleSlider.value, 0, 0));
+        }
 
         if (reloading)
         {
+            reloadImage.transform.parent.gameObject.SetActive(true);
             currentLoadTime += Time.deltaTime;
+            reloadImage.fillAmount = currentLoadTime / reloadTime;
 
             if (currentLoadTime >= reloadTime)
             {
                 reloading = false;
                 currentLoadTime = 0f;
+                reloadImage.transform.parent.gameObject.SetActive(false);
             }
         }
 	}
