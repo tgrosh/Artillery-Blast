@@ -33,7 +33,7 @@ GameObject:
   - 54: {fileID: 5457082}
   m_Layer: 0
   m_Name: BodyLeft
-  m_TagString: PlayerColor
+  m_TagString: TankColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ GameObject:
   - 54: {fileID: 5468466}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: PlayerColor
+  m_TagString: TankColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   - 54: {fileID: 5443468}
   m_Layer: 0
   m_Name: BodyRight
-  m_TagString: PlayerColor
+  m_TagString: TankColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - 54: {fileID: 5423290}
   m_Layer: 0
   m_Name: BodyCenter
-  m_TagString: PlayerColor
+  m_TagString: TankColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 168856}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 4.84, y: 1.61, z: -0.01}
-  m_LocalScale: {x: 0.19049914, y: 0.19049914, z: 0.19049914}
+  m_LocalScale: {x: 0.18333334, y: 0.18333334, z: 0.18333334}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
   - {fileID: 404916}
@@ -1201,7 +1201,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168856}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 3231dcad559c17b4b9efe8338fa73084, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -1322,7 +1322,7 @@ MonoBehaviour:
   cannonFireSound: {fileID: 8271602}
   cannonReloadSound: {fileID: 8228828}
   projectileSpawner: {fileID: 473312}
-  reloadTime: 3
+  reloadTime: 5
   reloadImage: {fileID: 11408498}
   angleSlider: {fileID: 0}
   powerSlider: {fileID: 0}

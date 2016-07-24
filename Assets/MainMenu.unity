@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -2348,6 +2348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234d9abaef046c3488c02febf3b66aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endGameCondition: {fileID: 0}
 --- !u!1001 &1029148346
 Prefab:
   m_ObjectHideFlags: 0
@@ -3178,11 +3179,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1010910113}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -354, y: -120}
-  m_SizeDelta: {x: 357, y: 57}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 36, y: 187}
+  m_SizeDelta: {x: 442, y: 94}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1686993324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3218,13 +3219,13 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e8bf1b34c5ea8cf4380ff3ae3ecd33b7, type: 3}
-    m_FontSize: 48
+    m_FontSize: 64
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 48
-    m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_MaxSize: 64
+    m_Alignment: 6
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour {
+    public GameObject endGameCondition;
 
 	// Use this for initialization
 	void Start () {
@@ -18,5 +19,10 @@ public class UI : MonoBehaviour {
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void YouWin()
+    {
+        endGameCondition.SetActive(true);
     }
 }
