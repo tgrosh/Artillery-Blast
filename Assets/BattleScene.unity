@@ -1867,7 +1867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1152491a493017e42adca7145eb87f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: {x: 5, y: 0, z: 0}
+  minSpeed: 3
+  maxSpeed: 35
   windScale: 20
   mediumSpeedThreshold: 10
   highSpeedThreshold: 50

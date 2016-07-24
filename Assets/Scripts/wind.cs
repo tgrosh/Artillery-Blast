@@ -27,6 +27,11 @@ public class wind : MonoBehaviour {
 	void Start () {
         magnitude = UnityEngine.Random.Range(minSpeed, maxSpeed);
 
+        if (UnityEngine.Random.value > .5f)
+        {
+            magnitude *= -1;
+        }
+
         windSpeedImage = GameObject.Find("WindSpeedImage").GetComponent<Image>();
         windSpeedIndicatorImage = GameObject.Find("WindSpeedIndicator").GetComponent<Image>();
         windSpeedText = GameObject.Find("WindSpeed").GetComponent<Text>();
@@ -53,7 +58,7 @@ public class wind : MonoBehaviour {
             windLowAudio.Play();
         }
         windSpeedText.color = new Color(windSpeedImage.color.r / 3, windSpeedImage.color.g / 3, windSpeedImage.color.b / 3);
-        windSpeedText.text = magnitude + " mph";
+        windSpeedText.text = Math.Abs(magnitude) + " mph";
     }
 	
 	// Update is called once per frame
