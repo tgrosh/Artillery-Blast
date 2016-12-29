@@ -27,7 +27,6 @@ public class TankCam : FreeLookCam {
 
         camEnabled = Input.GetMouseButton(1);
         currentRotation = transform.rotation.eulerAngles;
-        Debug.Log(currentRotation.y);
         if (currentRotation.y < 180f && currentRotation.y > startRotationY + panRange)
         {
             currentRotation.y = startRotationY + panRange;
@@ -36,7 +35,6 @@ public class TankCam : FreeLookCam {
         {
             currentRotation.y = startRotationY - panRange + 360f;
         }
-        Debug.Log(currentRotation.y);
         transform.rotation = Quaternion.Euler(currentRotation);
     }
 }

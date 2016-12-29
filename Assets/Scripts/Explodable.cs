@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Explodable : MonoBehaviour {
-    //public Detonator detonatorPrefab;
+    public Detonator detonatorPrefab;
     public AudioClip explosionAudioClip;
     [Range(0, 1)]
     public float explosionVolume;
@@ -32,8 +32,8 @@ public class Explodable : MonoBehaviour {
         }
 
         AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
-        //Instantiate(detonatorPrefab, transform.position, Quaternion.identity);
-        //Destroy(gameObject, detonatorPrefab.destroyTime);
-        Destroy(gameObject);
+        Instantiate(detonatorPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject, detonatorPrefab.destroyTime);
+        //Destroy(gameObject);
     }
 }
