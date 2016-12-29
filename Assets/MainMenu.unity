@@ -154,34 +154,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &33992146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 33992147}
-  m_Layer: 0
-  m_Name: Crystal1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &33992147
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33992146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.454, y: 1.046, z: -2.561}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &90515724 stripped
 Transform:
   m_PrefabParentObject: {fileID: 454428, guid: e550e76ca3e555f48930113292bbf0cb, type: 2}
@@ -876,7 +848,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -910,23 +882,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.026712928
+      value: -0.02671293
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.4156664
+      value: 0.41566643
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.012214682
+      value: -0.012214683
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.90904266
+      value: 0.9090427
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4071439640959844, guid: fe16748fe806a3a4388d80eede07d17f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
