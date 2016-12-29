@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Cannon : MonoBehaviour {
     public GameObject projectilePrefab;
-    public Detonator cannonFirePrefab;
+    //public Detonator cannonFirePrefab;
     public AudioSource cannonFireSound;
     public AudioSource cannonReloadSound;
     public Transform projectileSpawner;
@@ -49,7 +49,7 @@ public class Cannon : MonoBehaviour {
         if (!reloading)
         {
             cannonFireSound.Play();
-            Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+            //Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
 

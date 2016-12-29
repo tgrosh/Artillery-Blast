@@ -15,6 +15,6 @@ public class EnemyTank : Tank {
 
     void OnDestroy()
     {
-        GameObject.FindObjectOfType<UI>().YouWin();
+        FindObjectOfType<UI>().YouWin();
     }
 }
