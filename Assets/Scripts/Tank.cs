@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 
-public class Tank : MonoBehaviour {
+public class Tank : NetworkBehaviour {
     public Color color;
+    public Cannon cannon;
 
 	// Use this for initialization
 	public void Start() {
@@ -14,6 +17,12 @@ public class Tank : MonoBehaviour {
             }
         }
 	}
+
+    public override void OnStartLocalPlayer()
+    {
+        cannon.angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
+        cannon.powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();
+    }
 	
 	// Update is called once per frame
 	void Update () {

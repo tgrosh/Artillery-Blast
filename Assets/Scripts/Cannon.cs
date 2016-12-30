@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
-public class Cannon : MonoBehaviour {
+public class Cannon : NetworkBehaviour {
     public GameObject projectilePrefab;
     public Detonator cannonFirePrefab;
     public AudioSource cannonFireSound;

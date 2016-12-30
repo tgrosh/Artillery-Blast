@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class CannonBall : MonoBehaviour {
+public class CannonBall : NetworkBehaviour
+{
     void OnTriggerEnter(Collider col)
     {
         Explode(col.gameObject);
