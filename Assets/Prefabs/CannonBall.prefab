@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: 5450364}
   - component: {fileID: 11448296}
   - component: {fileID: 11455388}
+  - component: {fileID: 114158773352365780}
+  - component: {fileID: 114475875224078844}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -164,3 +166,55 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158686}
   m_IsPrefabParent: 1
+--- !u!114 &114158773352365780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 154
+    i1: 92
+    i2: 157
+    i3: 227
+    i4: 108
+    i5: 43
+    i6: 174
+    i7: 4
+    i8: 216
+    i9: 191
+    i10: 96
+    i11: 31
+    i12: 96
+    i13: 63
+    i14: 7
+    i15: 172
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114475875224078844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1

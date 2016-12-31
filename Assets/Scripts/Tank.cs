@@ -7,6 +7,7 @@ public class Tank : NetworkBehaviour {
     [SyncVar]
     public Color color;
     public Cannon cannon;
+    public static Tank localPlayer;
 
 	// Use this for initialization
 	public void Start()
@@ -22,6 +23,8 @@ public class Tank : NetworkBehaviour {
 
     public override void OnStartLocalPlayer()
     {
+        Tank.localPlayer = this;
+
         cannon.angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
         cannon.powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();
 
@@ -32,4 +35,10 @@ public class Tank : NetworkBehaviour {
     void Update () {
 	
 	}
+    
+    [Command] //server
+    public void Cmd_Fire(float power)
+    {
+        cannon.Fire(power);
+    }
 }

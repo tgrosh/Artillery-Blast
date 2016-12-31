@@ -22,8 +22,7 @@ public class Cannon : NetworkBehaviour {
         reloadImage.transform.parent.gameObject.SetActive(false);
     }
 	
-	// Update is called once per frame
-	void Update () {
+	void Update () {        
         if (angleSlider != null)
         {
             transform.localRotation = Quaternion.Euler(new Vector3(-angleSlider.value, 0, 0));
@@ -44,18 +43,20 @@ public class Cannon : NetworkBehaviour {
             }
         }
 	}
-
-    public void Fire()
+    
+    [Server]
+    public void Fire(float power)
     {
         if (!reloading)
         {
-            cannonFireSound.Play();
+            cannonFireSound.Play(); //needs to happen on client
             Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
-            projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * powerSlider.value, ForceMode.Impulse);
+            projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power, ForceMode.Impulse);
+            NetworkServer.Spawn(projectile);
 
             reloading = true;
-            cannonReloadSound.Play();
+            cannonReloadSound.Play(); //needs to happen on client
         }
     }
 }

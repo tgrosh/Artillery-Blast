@@ -25,4 +25,9 @@ public class UI : MonoBehaviour {
     {
         endGameCondition.SetActive(true);
     }
+
+    public void Fire()
+    {
+        Tank.localPlayer.Cmd_Fire(Tank.localPlayer.cannon.powerSlider.value);
+    }
 }
