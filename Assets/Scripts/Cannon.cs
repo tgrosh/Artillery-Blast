@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class Cannon : NetworkBehaviour {
     public GameObject projectilePrefab;
-    public Detonator cannonFirePrefab;
+    public ParticleSystem cannonFirePrefab;
     public AudioSource cannonFireSound;
     public AudioSource cannonReloadSound;
     public Transform projectileSpawner;
@@ -48,15 +48,20 @@ public class Cannon : NetworkBehaviour {
     public void Fire(float power)
     {
         if (!reloading)
-        {
-            cannonFireSound.Play(); //needs to happen on client
-            Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+        {            
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power, ForceMode.Impulse);
             NetworkServer.Spawn(projectile);
 
             reloading = true;
-            cannonReloadSound.Play(); //needs to happen on client
         }
+    }
+    
+    public void Rpc_Fire()
+    {
+        cannonFireSound.Play(); //needs to happen on client
+        ParticleSystem cannonFire = Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
+        Destroy(cannonFire, cannonFire.main.duration);
+        cannonReloadSound.Play(); //needs to happen on client
     }
 }

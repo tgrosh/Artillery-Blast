@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class Tank : NetworkBehaviour {
+public class Tank : Explodable {
     [SyncVar]
     public Color color;
     public Cannon cannon;
@@ -40,5 +40,13 @@ public class Tank : NetworkBehaviour {
     public void Cmd_Fire(float power)
     {
         cannon.Fire(power);
+        Rpc_Fire();      
     }
+
+    [ClientRpc]
+    public void Rpc_Fire()
+    {
+        cannon.Rpc_Fire();
+    }
+
 }

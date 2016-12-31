@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class Explodable : MonoBehaviour {
-    public Detonator detonatorPrefab;
-    public AudioClip explosionAudioClip;
-    [Range(0, 1)]
-    public float explosionVolume;
-    
+public class Explodable : NetworkBehaviour {
+    public ParticleSystem explosionPrefab;
 
     // Use this for initialization
     void Start () {
@@ -18,22 +15,14 @@ public class Explodable : MonoBehaviour {
 	
 	}
 
+    [Server]
     public void Explode()
     {
-        Collider[] colliders = transform.GetComponentsInChildren<Collider>(); // Physics.OverlapSphere(transform.position, explosionRadius);
-        foreach (Collider collider in colliders)
-        {
-            Rigidbody body = collider.GetComponent<Rigidbody>();
+        GameObject explosion = Instantiate(explosionPrefab.gameObject, transform.position, Quaternion.identity);
+        NetworkServer.Spawn(explosion);
+        explosion.GetComponent<Explosion>().Rpc_Explode();
 
-            if (body != null)
-            {
-                body.isKinematic = false;
-            }
-        }
-
-        AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
-        Instantiate(detonatorPrefab, transform.position, Quaternion.identity);
-        Destroy(gameObject, detonatorPrefab.destroyTime);
-        //Destroy(gameObject);
-    }
+        Destroy(gameObject, explosionPrefab.main.duration);
+        Destroy(explosion, explosionPrefab.main.duration);
+    }    
 }

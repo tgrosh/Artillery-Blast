@@ -241,7 +241,6 @@ GameObject:
   m_Component:
   - component: {fileID: 477806}
   - component: {fileID: 9571090}
-  - component: {fileID: 11456682}
   - component: {fileID: 114537073816288544}
   - component: {fileID: 114003656689915208}
   - component: {fileID: 114914568922617132}
@@ -1369,20 +1368,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11456682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1a9daec7ba2b742afda640d8a73a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detonatorPrefab: {fileID: 11400008, guid: cb42009d87acaec4195cefaeedec95de, type: 2}
-  explosionAudioClip: {fileID: 8300000, guid: 542b6e352c863144f8d91b43bc8ccba7, type: 3}
-  explosionVolume: 1
 --- !u!114 &11468918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1630,7 +1615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 158686, guid: 9a5c9de36c2bae04d8bf601f603f07ac, type: 2}
-  cannonFirePrefab: {fileID: 11400008, guid: 25558fbc0540a7440a38db6a9b7003c7, type: 2}
+  cannonFirePrefab: {fileID: 198133388071955066, guid: 0a621c3e06af8c14aaa3b6c61f1c79a6,
+    type: 2}
   cannonFireSound: {fileID: 8271602}
   cannonReloadSound: {fileID: 8228828}
   projectileSpawner: {fileID: 473312}
@@ -1649,6 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d40cbb4c765b274d8d2f14e3e75f612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 0}
   color: {r: 0, g: 1, b: 0.13103437, a: 0}
   cannon: {fileID: 114298630540057516}
 --- !u!114 &114745356578338024
