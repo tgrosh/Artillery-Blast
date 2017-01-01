@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011298463270
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +72,6 @@ GameObject:
   - component: {fileID: 4000010212820824}
   - component: {fileID: 198000012777718758}
   - component: {fileID: 199000010553669322}
-  - component: {fileID: 114305293781522818}
   - component: {fileID: 114192394955724868}
   m_Layer: 0
   m_Name: TankExplosion
@@ -272,38 +271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionAudioClip: {fileID: 8300000, guid: 395ebd3d6fca1ec40a6b3c7415c1edb7, type: 3}
---- !u!114 &114305293781522818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011797152326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 124
-    i1: 61
-    i2: 94
-    i3: 25
-    i4: 57
-    i5: 35
-    i6: 60
-    i7: 116
-    i8: 155
-    i9: 133
-    i10: 166
-    i11: 12
-    i12: 211
-    i13: 228
-    i14: 58
-    i15: 27
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!198 &198000010667505060
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -5455,7 +5422,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 1
@@ -8002,7 +7969,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 0
@@ -10522,7 +10489,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 1
@@ -11622,9 +11589,9 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
   ForceModule:
-    enabled: 0
+    enabled: 1
     x:
-      scalar: 0
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11663,7 +11630,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     y:
-      scalar: 0
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11702,7 +11669,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     z:
-      scalar: 0
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -13057,7 +13024,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 0
@@ -15610,7 +15577,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 1
@@ -16066,7 +16033,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 1
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -18247,7 +18214,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 4
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   autoRandomSeed: 0

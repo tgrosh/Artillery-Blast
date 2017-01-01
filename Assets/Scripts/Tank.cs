@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System;
 
 public class Tank : Explodable {
     [SyncVar]
@@ -49,4 +50,17 @@ public class Tank : Explodable {
         cannon.Rpc_Fire();
     }
 
+    [ClientRpc]
+    public void Rpc_Explode()
+    {
+        base.Explode();
+        Destroy(gameObject, 4f);
+    }
+
+    [Server]
+    new void Explode()
+    {
+        Rpc_Explode();
+    }
+    
 }

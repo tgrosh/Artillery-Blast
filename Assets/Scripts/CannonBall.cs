@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public class CannonBall : Explodable
@@ -6,13 +7,20 @@ public class CannonBall : Explodable
     [Server]
     void OnTriggerEnter(Collider col)
     {
-        Explode(col.gameObject);
+        if (isServer)
+        {
+            Debug.Log("CannonBall.OnTriggerEnter");
+            Explode(col.gameObject);
+        }
     }
     
     [Server]
     void OnCollisionEnter(Collision col)
     {
-        Explode(col.gameObject);
+        if (isServer)
+        {
+            Explode(col.gameObject);
+        }
     }
     
     [Server]
@@ -25,7 +33,19 @@ public class CannonBall : Explodable
             explodable.Explode();
         }
 
+        Explode();
+    }
+
+    [ClientRpc]
+    public void Rpc_Explode()
+    {
         base.Explode();
         Destroy(gameObject);
+    }
+
+    [Server]
+    new void Explode()
+    {
+        Rpc_Explode();   
     }
 }

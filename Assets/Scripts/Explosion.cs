@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class Explosion : NetworkBehaviour {
+public class Explosion : MonoBehaviour {
     public AudioClip explosionAudioClip;
 
     // Use this for initialization
@@ -16,8 +15,7 @@ public class Explosion : NetworkBehaviour {
 		
 	}
     
-    [ClientRpc]
-    public void Rpc_Explode()
+    public void Explode()
     {
         AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
 

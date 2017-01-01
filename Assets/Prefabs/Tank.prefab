@@ -1635,7 +1635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d40cbb4c765b274d8d2f14e3e75f612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
+    type: 2}
   color: {r: 0, g: 1, b: 0.13103437, a: 0}
   cannon: {fileID: 114298630540057516}
 --- !u!114 &114745356578338024

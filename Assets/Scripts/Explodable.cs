@@ -14,15 +14,12 @@ public class Explodable : NetworkBehaviour {
 	void Update () {
 	
 	}
-
-    [Server]
+    
     public void Explode()
     {
         GameObject explosion = Instantiate(explosionPrefab.gameObject, transform.position, Quaternion.identity);
-        NetworkServer.Spawn(explosion);
-        explosion.GetComponent<Explosion>().Rpc_Explode();
+        explosion.GetComponent<Explosion>().Explode();
 
-        Destroy(gameObject, explosionPrefab.main.duration);
         Destroy(explosion, explosionPrefab.main.duration);
-    }    
+    }
 }

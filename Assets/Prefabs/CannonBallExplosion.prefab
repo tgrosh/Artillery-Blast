@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4665939958505290}
   - component: {fileID: 198866730407836070}
   - component: {fileID: 199818369397306986}
-  - component: {fileID: 114745509128906764}
   - component: {fileID: 114693967125220836}
   m_Layer: 0
   m_Name: CannonBallExplosion
@@ -55,38 +54,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionAudioClip: {fileID: 8300000, guid: 542b6e352c863144f8d91b43bc8ccba7, type: 3}
---- !u!114 &114745509128906764
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251501664223988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 239
-    i1: 205
-    i2: 252
-    i3: 97
-    i4: 63
-    i5: 251
-    i6: 171
-    i7: 36
-    i8: 168
-    i9: 232
-    i10: 105
-    i11: 196
-    i12: 9
-    i13: 47
-    i14: 253
-    i15: 161
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!198 &198866730407836070
 ParticleSystem:
   m_ObjectHideFlags: 1

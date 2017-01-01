@@ -19,22 +19,22 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.173 seconds
+- Completed reload, in  0.031 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 24.151794 ms
+UnloadTime: 1.170155 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2aac -> priority: 1 
-  Thread -> id: e7c -> priority: 1 
+  Thread -> id: 3be0 -> priority: 1 
+  Thread -> id: 1874 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.071666 ms
+UnloadTime: 5.244986 ms
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 901.
-Total: 0.735474 ms (FindLiveObjects: 0.050732 ms CreateObjectMapping: 0.040225 ms MarkObjects: 0.576372 ms  DeleteObjects: 0.067243 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 898.
+Total: 0.721966 ms (FindLiveObjects: 0.068144 ms CreateObjectMapping: 0.058837 ms MarkObjects: 0.530442 ms  DeleteObjects: 0.063941 ms)
 
 The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
  
@@ -49,12 +49,67 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.300193 ms
+UnloadTime: 0.264470 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2176.
-Total: 1.334661 ms (FindLiveObjects: 0.130884 ms CreateObjectMapping: 0.031520 ms MarkObjects: 1.163251 ms  DeleteObjects: 0.008405 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 2.343012 ms (FindLiveObjects: 0.151297 ms CreateObjectMapping: 0.029719 ms MarkObjects: 2.150888 ms  DeleteObjects: 0.009906 ms)
 
 Spawn scene object not found for 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnCollisionEnter(UnityEngine.Collision)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Did not find target for sync message for 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+ClientDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.996943 ms
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1226.
+Total: 1.851895 ms (FindLiveObjects: 0.039025 ms CreateObjectMapping: 0.026717 ms MarkObjects: 0.711759 ms  DeleteObjects: 1.074093 ms)
 

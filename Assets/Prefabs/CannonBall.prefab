@@ -130,8 +130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 198866730407836070, guid: efcdfc613ffbab24a8e869c4092ffda1,
     type: 2}
-  explosionAudioClip: {fileID: 8300000, guid: 542b6e352c863144f8d91b43bc8ccba7, type: 3}
-  explosionVolume: 0.5
 --- !u!135 &13525604
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -199,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.1
+  m_SendInterval: 0.033333335
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
