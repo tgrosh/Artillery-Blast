@@ -1639,7 +1639,7 @@ MonoBehaviour:
   explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
     type: 2}
   explosionForce: 1000
-  explosionRadius: 10
+  explosionRadius: 1
   color: {r: 0, g: 1, b: 0.13103437, a: 0}
   cannon: {fileID: 114298630540057516}
 --- !u!114 &114745356578338024

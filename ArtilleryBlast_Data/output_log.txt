@@ -19,67 +19,22 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.025 seconds
+- Completed reload, in  0.026 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.936304 ms
+UnloadTime: 0.836640 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3c7c -> priority: 1 
-  Thread -> id: 3ba8 -> priority: 1 
+  Thread -> id: 3204 -> priority: 1 
+  Thread -> id: 2de0 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.898208 ms
+UnloadTime: 5.173240 ms
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 900.
-Total: 0.840242 ms (FindLiveObjects: 0.059438 ms CreateObjectMapping: 0.050132 ms MarkObjects: 0.658024 ms  DeleteObjects: 0.071746 ms)
-
-The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.240155 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2177.
-Total: 1.773244 ms (FindLiveObjects: 0.117675 ms CreateObjectMapping: 0.030619 ms MarkObjects: 1.614442 ms  DeleteObjects: 0.009606 ms)
-
-Spawn scene object not found for 1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 1000
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
-ClientDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.944109 ms
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1228.
-Total: 1.925143 ms (FindLiveObjects: 0.038424 ms CreateObjectMapping: 0.027317 ms MarkObjects: 0.720165 ms  DeleteObjects: 1.138635 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 899.
+Total: 0.649019 ms (FindLiveObjects: 0.043828 ms CreateObjectMapping: 0.039025 ms MarkObjects: 0.513031 ms  DeleteObjects: 0.052533 ms)
 
 The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
  
@@ -94,10 +49,10 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.394754 ms
+UnloadTime: 0.269574 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2178.
-Total: 0.936604 ms (FindLiveObjects: 0.076249 ms CreateObjectMapping: 0.028818 ms MarkObjects: 0.822831 ms  DeleteObjects: 0.008105 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2176.
+Total: 1.805365 ms (FindLiveObjects: 0.103867 ms CreateObjectMapping: 0.038124 ms MarkObjects: 1.654068 ms  DeleteObjects: 0.008705 ms)
 
 Spawn scene object not found for 1
  
@@ -117,104 +72,8 @@ ClientDisconnected due to error: Timeout
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.676636 ms
+UnloadTime: 0.941708 ms
 
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1228.
-Total: 1.830281 ms (FindLiveObjects: 0.037524 ms CreateObjectMapping: 0.034222 ms MarkObjects: 0.691946 ms  DeleteObjects: 1.066288 ms)
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1227.
+Total: 1.847993 ms (FindLiveObjects: 0.037224 ms CreateObjectMapping: 0.027617 ms MarkObjects: 0.715061 ms  DeleteObjects: 1.067789 ms)
 
-The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.246759 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2178.
-Total: 0.885271 ms (FindLiveObjects: 0.059738 ms CreateObjectMapping: 0.030919 ms MarkObjects: 0.786808 ms  DeleteObjects: 0.007504 ms)
-
-Spawn scene object not found for 1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 6
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 1000
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 1000
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 8
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
-ClientDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.712059 ms
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1228.
-Total: 1.845591 ms (FindLiveObjects: 0.051933 ms CreateObjectMapping: 0.032420 ms MarkObjects: 0.709658 ms  DeleteObjects: 1.051278 ms)
-
-The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.289086 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2178.
-Total: 0.914390 ms (FindLiveObjects: 0.073547 ms CreateObjectMapping: 0.038725 ms MarkObjects: 0.793412 ms  DeleteObjects: 0.008105 ms)
-
-Spawn scene object not found for 1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 1000
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}

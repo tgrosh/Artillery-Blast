@@ -36,7 +36,7 @@ public class Explosion : MonoBehaviour {
                 if (body != null)
                 {
                     body.isKinematic = false;
-                    body.AddExplosionForce(force, explosionPos, radius, 3.0F);
+                    body.AddExplosionForce(force, explosionPos, radius, force * 10.0F);
                 }
             }
         }
