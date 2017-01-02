@@ -1622,7 +1622,7 @@ MonoBehaviour:
   cannonReloadSound: {fileID: 8228828}
   projectileSpawner: {fileID: 473312}
   reloadTime: 3
-  reloadImage: {fileID: 11480982}
+  reloadImage: {fileID: 11408498}
   angleSlider: {fileID: 0}
   powerSlider: {fileID: 0}
 --- !u!114 &114537073816288544

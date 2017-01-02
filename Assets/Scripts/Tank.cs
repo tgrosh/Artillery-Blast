@@ -42,8 +42,11 @@ public class Tank : Explodable {
     [Command] //server
     public void Cmd_Fire(float power)
     {
-        cannon.Fire(power);
-        Rpc_Fire();      
+        if (!cannon.reloading)
+        {
+            cannon.Fire(power);
+            Rpc_Fire();
+        }
     }
 
     [ClientRpc]

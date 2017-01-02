@@ -11,15 +11,19 @@ public class Cannon : NetworkBehaviour {
     public Transform projectileSpawner;
     public float reloadTime;
     public Image reloadImage;
+
+    [HideInInspector]
     public Slider angleSlider;
+    [HideInInspector]
     public Slider powerSlider;
+    [HideInInspector]
+    public bool reloading;
 
     float currentLoadTime = 0f;
-    bool reloading; 
 
     // Use this for initialization
     void Start () {
-        reloadImage.transform.parent.gameObject.SetActive(false);
+        reloadImage.transform.parent.parent.gameObject.SetActive(false);
     }
 	
 	void Update () {        
@@ -30,7 +34,7 @@ public class Cannon : NetworkBehaviour {
 
         if (reloading)
         {
-            reloadImage.transform.parent.gameObject.SetActive(true);
+            reloadImage.transform.parent.parent.gameObject.SetActive(true);
             currentLoadTime += Time.deltaTime;
             reloadImage.fillAmount = currentLoadTime / reloadTime;
 
@@ -39,7 +43,7 @@ public class Cannon : NetworkBehaviour {
                 cannonReloadSound.Stop();
                 reloading = false;
                 currentLoadTime = 0f;
-                reloadImage.transform.parent.gameObject.SetActive(false);
+                reloadImage.transform.parent.parent.gameObject.SetActive(false);
             }
         }
 	}
