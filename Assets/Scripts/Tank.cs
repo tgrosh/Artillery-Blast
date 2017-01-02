@@ -6,7 +6,9 @@ using System;
 
 public class Tank : Explodable {
     [SyncVar]
-    public Color color;
+    public Color playerColor;
+    [SyncVar]
+    public string playerName;
     public Cannon cannon;
     public static Tank localPlayer;
 
@@ -17,7 +19,7 @@ public class Tank : Explodable {
         {
             if (childTransform.CompareTag("TankColor"))
             {
-                childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", color);
+                childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", playerColor);
             }
         }
     }
