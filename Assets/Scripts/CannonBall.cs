@@ -9,7 +9,6 @@ public class CannonBall : Explodable
     {
         if (isServer)
         {
-            Debug.Log("CannonBall.OnTriggerEnter");
             Explode(col.gameObject);
         }
     }
@@ -44,7 +43,7 @@ public class CannonBall : Explodable
     }
 
     [Server]
-    new void Explode()
+    public override void Explode()
     {
         Rpc_Explode();   
     }

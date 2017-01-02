@@ -17,16 +17,27 @@ public class Explosion : MonoBehaviour {
     
     public void Explode()
     {
+        Explode(0, 0);
+    }
+
+    public void Explode(float force, float radius)
+    {
         AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
+        Debug.Log("Exploding with force " + force);
 
-        Collider[] colliders = transform.GetComponentsInChildren<Collider>();
-        foreach (Collider collider in colliders)
+        if (force > 0f)
         {
-            Rigidbody body = collider.GetComponent<Rigidbody>();
-
-            if (body != null)
+            Vector3 explosionPos = transform.position;
+            Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
+            foreach (Collider hit in colliders)
             {
-                body.isKinematic = false;
+                Rigidbody body = hit.GetComponent<Rigidbody>();
+
+                if (body != null)
+                {
+                    body.isKinematic = false;
+                    body.AddExplosionForce(force, explosionPos, radius, 3.0F);
+                }
             }
         }
     }

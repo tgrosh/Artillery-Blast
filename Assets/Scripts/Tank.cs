@@ -58,7 +58,7 @@ public class Tank : Explodable {
     }
 
     [Server]
-    new void Explode()
+    public override void Explode()
     {
         Rpc_Explode();
     }

@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 114003656689915208}
   - component: {fileID: 114914568922617132}
   - component: {fileID: 114223488034781794}
+  - component: {fileID: 114974105308665824}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -1637,6 +1638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
     type: 2}
+  explosionForce: 1000
+  explosionRadius: 10
   color: {r: 0, g: 1, b: 0.13103437, a: 0}
   cannon: {fileID: 114298630540057516}
 --- !u!114 &114745356578338024
@@ -1691,3 +1694,18 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114974105308665824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1a9daec7ba2b742afda640d8a73a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
+    type: 2}
+  explosionForce: 0
+  explosionRadius: 0

@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 11448296}
   - component: {fileID: 114158773352365780}
   - component: {fileID: 114475875224078844}
+  - component: {fileID: 114965095078950640}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -205,3 +206,16 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &114965095078950640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1a9daec7ba2b742afda640d8a73a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 198866730407836070, guid: efcdfc613ffbab24a8e869c4092ffda1,
+    type: 2}
