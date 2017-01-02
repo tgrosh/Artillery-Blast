@@ -19,22 +19,26 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.026 seconds
+- Completed reload, in  0.165 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.836640 ms
+UnloadTime: 0.751084 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3204 -> priority: 1 
-  Thread -> id: 2de0 -> priority: 1 
+  Thread -> id: 30b4 -> priority: 1 
+  Thread -> id: 3518 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.173240 ms
+UnloadTime: 4.867643 ms
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 899.
-Total: 0.649019 ms (FindLiveObjects: 0.043828 ms CreateObjectMapping: 0.039025 ms MarkObjects: 0.513031 ms  DeleteObjects: 0.052533 ms)
+Total: 0.566765 ms (FindLiveObjects: 0.054034 ms CreateObjectMapping: 0.026116 ms MarkObjects: 0.436481 ms  DeleteObjects: 0.049832 ms)
+
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
  
@@ -49,31 +53,17 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.269574 ms
+UnloadTime: 0.306497 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2176.
-Total: 1.805365 ms (FindLiveObjects: 0.103867 ms CreateObjectMapping: 0.038124 ms MarkObjects: 1.654068 ms  DeleteObjects: 0.008705 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2371.
+Total: 2.165898 ms (FindLiveObjects: 0.170810 ms CreateObjectMapping: 0.055836 ms MarkObjects: 1.929345 ms  DeleteObjects: 0.009306 ms)
 
-Spawn scene object not found for 1
+Log: connection {1} has been disconnected by timeout; address {::ffff:52.86.7.189:9999}
+ServerDisconnected due to error: Timeout
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Exploding with force 1000
+ClientRpc call on un-spawned object
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exploding with force 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
-ClientDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.941708 ms
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 1227.
-Total: 1.847993 ms (FindLiveObjects: 0.037224 ms CreateObjectMapping: 0.027617 ms MarkObjects: 0.715061 ms  DeleteObjects: 1.067789 ms)
 
