@@ -2553,7 +2553,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 10
@@ -5714,6 +5714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fde39f6bd562a4419e078a488ea9835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windPrefab: {fileID: 114569186819857510, guid: 3185ea6b08732454089b53a9b6c5a462,
+    type: 2}
 --- !u!114 &114057673981416360
 MonoBehaviour:
   m_ObjectHideFlags: 1

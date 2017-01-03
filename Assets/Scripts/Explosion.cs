@@ -23,7 +23,6 @@ public class Explosion : MonoBehaviour {
     public void Explode(float force, float radius)
     {
         AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
-        Debug.Log("Exploding with force " + force);
 
         if (force > 0f)
         {

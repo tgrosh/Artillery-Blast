@@ -59,7 +59,6 @@ public class Tank : Explodable {
     public void Rpc_Explode()
     {
         base.Explode();
-        Destroy(gameObject, 4f);
     }
 
     [Server]

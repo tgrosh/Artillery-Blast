@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Networking;
 
-public class wind : MonoBehaviour {
+public class Wind : NetworkBehaviour {
     public int minSpeed;
     public int maxSpeed;
     public float windScale;
@@ -17,14 +18,15 @@ public class wind : MonoBehaviour {
     public AudioSource windMediumAudio;
     public AudioSource windHighAudio;
 
+    [SyncVar]
     int magnitude;
     List<CannonBall> cannonBallsAffected = new List<CannonBall>();
     Image windSpeedImage;
     Image windSpeedIndicatorImage;
     Text windSpeedText;
-
-	// Use this for initialization
-	void Start () {
+    
+    public override void OnStartServer()
+    {
         magnitude = UnityEngine.Random.Range(minSpeed, maxSpeed);
 
         if (UnityEngine.Random.value > .5f)
@@ -32,10 +34,15 @@ public class wind : MonoBehaviour {
             magnitude *= -1;
         }
 
+        base.OnStartServer();
+    }
+
+    public override void OnStartClient()
+    {
         windSpeedImage = GameObject.Find("WindSpeedImage").GetComponent<Image>();
         windSpeedIndicatorImage = GameObject.Find("WindSpeedIndicator").GetComponent<Image>();
         windSpeedText = GameObject.Find("WindSpeed").GetComponent<Text>();
-
+        
         if (magnitude < 0)
         {
             windSpeedImage.transform.Rotate(Vector3.up, 180);
@@ -45,13 +52,15 @@ public class wind : MonoBehaviour {
         {
             windSpeedImage.color = highSpeedColor;
             windSpeedIndicatorImage.color = highSpeedColor;
-            windHighAudio.Play();                      
-        } else if (Math.Abs(magnitude) > mediumSpeedThreshold)
+            windHighAudio.Play();
+        }
+        else if (Math.Abs(magnitude) > mediumSpeedThreshold)
         {
             windSpeedImage.color = mediumSpeedColor;
             windSpeedIndicatorImage.color = mediumSpeedColor;
             windMediumAudio.Play();
-        } else
+        }
+        else
         {
             windSpeedImage.color = lowSpeedColor;
             windSpeedIndicatorImage.color = lowSpeedColor;
@@ -59,17 +68,19 @@ public class wind : MonoBehaviour {
         }
         windSpeedText.color = new Color(windSpeedImage.color.r / 3, windSpeedImage.color.g / 3, windSpeedImage.color.b / 3);
         windSpeedText.text = Math.Abs(magnitude) + " mph";
+
+        base.OnStartClient();
     }
-	
-	// Update is called once per frame
+
+    [Server]
 	void Update () {
-	    foreach (CannonBall cannonBall in GameObject.FindObjectsOfType<CannonBall>())
+        foreach (CannonBall cannonBall in GameObject.FindObjectsOfType<CannonBall>())
         {
             if (!cannonBallsAffected.Contains(cannonBall))
             {
                 cannonBallsAffected.Add(cannonBall);
                 cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(magnitude, 0, 0) * windScale);
-            }            
+            }
         }
 	}
 }

@@ -208,6 +208,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_SpawnPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22459552, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -284,14 +288,17 @@ Prefab:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 140634, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11456716, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
-      propertyPath: m_Padding.m_Top
-      value: 10
-      objectReference: {fileID: 0}
+    - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_SpawnPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 1330435338376304, guid: 3185ea6b08732454089b53a9b6c5a462,
+        type: 2}
+    - target: {fileID: 114007890785383678, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+        type: 2}
+      propertyPath: windPrefab
+      value: 
+      objectReference: {fileID: 114569186819857510, guid: 3185ea6b08732454089b53a9b6c5a462,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
   m_IsPrefabParent: 0
