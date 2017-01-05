@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SpawnPosition : MonoBehaviour {
     public Text playerText;
+    public Tank player;
 
 	// Use this for initialization
 	void Start () {
@@ -13,15 +14,18 @@ public class SpawnPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (player != null)
+        {
+            playerText.text = player.playerName;
+        }
+    }
 
     void OnTriggerEnter(Collider col)
     {
         Tank tank = col.GetComponentInParent<Tank>();
         if (tank != null)
         {
-            playerText.text = tank.playerName;
+            player = tank;
         }
     }
 }
