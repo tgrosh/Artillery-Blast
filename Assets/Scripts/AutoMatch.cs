@@ -23,7 +23,7 @@ public class AutoMatch : MonoBehaviour
         {
             // CREATE INTERNET MATCH
             NetworkServer.Listen(matchResponse, 9000);
-            NetManager.singleton.StartHost(matchResponse);
+            NetManager.singleton.StartHost(matchResponse);            
         }
     }
 
@@ -34,7 +34,7 @@ public class AutoMatch : MonoBehaviour
         {
             // CREATE INTERNET MATCH
             string matchName = "default";
-            uint matchSize = 16;
+            uint matchSize = 2;
             bool matchAdvertise = true;
             string matchPassword = string.Empty;
             string publicClientAddress = string.Empty;
@@ -64,7 +64,7 @@ public class AutoMatch : MonoBehaviour
     }
 
     // Use this for initialization
-    public void Match()
+    public void StartMatch()
     {
         if (NetManager.singleton)
         {
@@ -75,6 +75,14 @@ public class AutoMatch : MonoBehaviour
                 // FIND MATCHES
                 NetManager.singleton.matchMaker.ListMatches(0, 10, "default", false, 0, 0, CallbackListMatches);
             }
+        }
+    }
+
+    public void EndMatch()
+    {
+        if (NetManager.singleton)
+        {
+            NetManager.singleton.StopMatchMaker();
         }
     }
 }

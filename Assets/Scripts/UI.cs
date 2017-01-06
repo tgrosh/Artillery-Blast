@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using System;
 using Prototype.NetworkLobby;
+using UnityEngine.Networking;
 
 public class UI : MonoBehaviour {
     public GameObject youWinPrefab;
@@ -16,6 +17,11 @@ public class UI : MonoBehaviour {
     public void LoadScene(int level)
     {
         SceneManager.LoadScene(level);
+    }
+
+    public void EndGame()
+    {
+        GameObject.FindObjectOfType<LobbyManager>().SendReturnToLobby();
     }
 
     public void Exit()
@@ -40,10 +46,12 @@ public class UI : MonoBehaviour {
 
     public void NewMatch()
     {
-        GameObject.FindObjectOfType<LobbyManager>().StopHost();
-        GameObject.FindObjectOfType<LobbyManager>().StopClient();
-        GameObject.FindObjectOfType<LobbyManager>().StopMatchMaker();
-        LoadScene(2);
+        NetManager.singleton.StopHost();
+        //GameObject.FindObjectOfType<AutoMatch>().EndMatch();
+        //GameObject.FindObjectOfType<LobbyManager>().StopHost();
+        //GameObject.FindObjectOfType<LobbyManager>().StopClient();
+        //GameObject.FindObjectOfType<LobbyManager>().StopMatchMaker();
+        //LoadScene(2);
     }
 
     public void Rematch()

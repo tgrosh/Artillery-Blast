@@ -16,10 +16,10 @@ public class Tank : Explodable {
     {
         Tank.localPlayer = this;
 
-        this.playerName = MenuPlayer.current.playerName;
-        this.playerColor = MenuPlayer.current.playerColor;
+        //this.playerName = MenuPlayer.current.playerName;
+        //this.playerColor = MenuPlayer.current.playerColor;
 
-        this.Cmd_SetPlayerInfo(this.playerName, this.playerColor);
+        //this.Cmd_SetPlayerInfo(this.playerName, this.playerColor);
 
         cannon.angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
         cannon.powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();

@@ -26,27 +26,17 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.787599 ms
+UnloadTime: 0.807221 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2d84 -> priority: 1 
-  Thread -> id: 1bb8 -> priority: 1 
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+  Thread -> id: 2b58 -> priority: 1 
+  Thread -> id: 3708 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.346752 ms
 
-CallbackListMatches: success=True info= count=1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1491.
+Total: 0.658925 ms (FindLiveObjects: 0.066643 ms CreateObjectMapping: 0.034822 ms MarkObjects: 0.548153 ms  DeleteObjects: 0.009005 ms)
 
-Join Match:default
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-CallbackJoinMatch: success=True info= auth=Cw5Rsv0XOZ9fb01E4N6EBgbXf5Mv5ywCpehEMKkt6xYC2G7Hye6OUPb/HLtsZJxJu6jJetIPEw7N2XmqVxpUdA==
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -54,675 +44,109 @@ The prefab 'Tank' has multiple NetworkIdentity components. There can only be one
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Network configuration mismatch detected. The number of networked scripts on the client does not match the number of networked scripts on the server. This could be caused by lazy loading of scripts on the client. This warning can be disabled by the checkbox in NetworkManager Script CRC Check.
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.491417 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.237098 ms (FindLiveObjects: 0.166307 ms CreateObjectMapping: 0.036623 ms MarkObjects: 1.018557 ms  DeleteObjects: 0.014709 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.161750 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.105613 ms (FindLiveObjects: 0.075949 ms CreateObjectMapping: 0.033321 ms MarkObjects: 0.924597 ms  DeleteObjects: 0.071145 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.462898 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.219087 ms (FindLiveObjects: 0.138089 ms CreateObjectMapping: 0.029719 ms MarkObjects: 1.038070 ms  DeleteObjects: 0.012908 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.798215 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.322053 ms (FindLiveObjects: 0.083754 ms CreateObjectMapping: 0.037224 ms MarkObjects: 1.110717 ms  DeleteObjects: 0.089757 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.435581 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.203477 ms (FindLiveObjects: 0.103867 ms CreateObjectMapping: 0.030019 ms MarkObjects: 1.052479 ms  DeleteObjects: 0.016810 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.911088 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.015555 ms (FindLiveObjects: 0.064841 ms CreateObjectMapping: 0.030319 ms MarkObjects: 0.851049 ms  DeleteObjects: 0.068444 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.420571 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.225391 ms (FindLiveObjects: 0.135087 ms CreateObjectMapping: 0.039925 ms MarkObjects: 1.035068 ms  DeleteObjects: 0.014709 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.797314 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.026062 ms (FindLiveObjects: 0.062440 ms CreateObjectMapping: 0.031220 ms MarkObjects: 0.862456 ms  DeleteObjects: 0.069344 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-CRC Local Dump CannonBall : 0
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.487514 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.177060 ms (FindLiveObjects: 0.096962 ms CreateObjectMapping: 0.034222 ms MarkObjects: 1.031766 ms  DeleteObjects: 0.013508 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.872663 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.061785 ms (FindLiveObjects: 0.077750 ms CreateObjectMapping: 0.037524 ms MarkObjects: 0.879567 ms  DeleteObjects: 0.066643 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-CRC Local Dump Tank : 0
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.414267 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2421.
+Total: 1.570914 ms (FindLiveObjects: 0.165106 ms CreateObjectMapping: 0.031520 ms MarkObjects: 1.356275 ms  DeleteObjects: 0.016810 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.211582 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1701.
+Total: 1.121223 ms (FindLiveObjects: 0.071446 ms CreateObjectMapping: 0.032420 ms MarkObjects: 0.954616 ms  DeleteObjects: 0.062140 ms)
+
+ClientRpc call on un-spawned object
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-CRC Remote Dump Tank : 0
+MatchMakingClient Destroy :https://mm.unet.unity3d.com/json/reply/DestroyMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-CRC Remote Dump LobbyPlayer : 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-CRC Remote Dump CannonBall : 0
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 14.743420 ms
-[Server] function 'System.Void GameManager::Start()' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+UnloadTime: 0.477608 ms
 
-The prefab 'Tank' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1671.
-Total: 0.621101 ms (FindLiveObjects: 0.071446 ms CreateObjectMapping: 0.046830 ms MarkObjects: 0.489916 ms  DeleteObjects: 0.012307 ms)
-
-Failed to spawn server object, assetId=3185ea6b08732454089b53a9b6c5a462 netId=1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.402805 ms
-
-Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 1086.
-Total: 1.792457 ms (FindLiveObjects: 0.101765 ms CreateObjectMapping: 0.019512 ms MarkObjects: 0.440684 ms  DeleteObjects: 1.229593 ms)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Did not find target for sync message for 3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1539.
+Total: 0.848047 ms (FindLiveObjects: 0.064841 ms CreateObjectMapping: 0.030319 ms MarkObjects: 0.748083 ms  DeleteObjects: 0.004502 ms)
 
