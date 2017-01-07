@@ -110,7 +110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player (Right)
+  m_Text: 
 --- !u!114 &114418504081555136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerText: {fileID: 114173830556023872}
+  player: {fileID: 0}
 --- !u!135 &135655336817503178
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -1,9 +1,22 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityStandardAssets.Cameras;
 
 public class CannonBall : Explodable
 {
+    [SyncVar]
+    public NetworkInstanceId owner;
+
+    void Start()
+    {
+        if (owner == Tank.localPlayer.netId)
+        {
+            Camera.main.transform.root.GetComponent<TankCam>().lookAtTarget = transform;
+        }
+    }
+    
+
     [Server]
     void OnTriggerEnter(Collider col)
     {
@@ -40,6 +53,10 @@ public class CannonBall : Explodable
     {
         base.Explode();
         Destroy(gameObject);
+        if (owner == Tank.localPlayer.netId)
+        {
+            Camera.main.transform.root.GetComponent<TankCam>().lookAtTarget = null;
+        }
     }
 
     [Server]

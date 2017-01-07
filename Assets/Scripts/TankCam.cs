@@ -6,6 +6,8 @@ using UnityStandardAssets.Cameras;
 public class TankCam : FreeLookCam {
     [Range(0,90)]
     public float panRange;
+    public Transform lookAtTarget;
+    public float lookAtSpeed;
 
     float startRotationY;
     Vector3 currentRotation;
@@ -20,7 +22,7 @@ public class TankCam : FreeLookCam {
 
     // Update is called once per frame
     new void Update () {
-        if (this.camEnabled)
+        if (this.camEnabled && this.lookAtTarget == null)
         {
             base.Update();
         }
@@ -36,5 +38,16 @@ public class TankCam : FreeLookCam {
             currentRotation.y = startRotationY - panRange + 360f;
         }
         transform.rotation = Quaternion.Euler(currentRotation);
+    }
+
+    void FixedUpdate()
+    {
+        if (lookAtTarget != null)
+        {
+            Vector3 toTarget = lookAtTarget.position - transform.position;            
+            Quaternion targetRotation = Quaternion.LookRotation(toTarget);
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, lookAtSpeed);
+        }
     }
 }

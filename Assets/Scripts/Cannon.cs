@@ -55,6 +55,7 @@ public class Cannon : NetworkBehaviour {
         {            
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
             projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power, ForceMode.Impulse);
+            projectile.GetComponent<CannonBall>().owner = GetComponentInParent<Tank>().netId;
             NetworkServer.Spawn(projectile);
 
             reloading = true;
