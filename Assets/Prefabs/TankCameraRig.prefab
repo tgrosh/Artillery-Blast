@@ -191,7 +191,7 @@ MonoBehaviour:
   m_VerticalAutoReturn: 0
   panRange: 55
   lookAtTarget: {fileID: 0}
-  lookAtSpeed: 0.025
+  lookAtSpeed: 0.1
 --- !u!114 &114215383988737834
 MonoBehaviour:
   m_ObjectHideFlags: 1

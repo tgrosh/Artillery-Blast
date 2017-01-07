@@ -47,7 +47,7 @@ public class TankCam : FreeLookCam {
             Vector3 toTarget = lookAtTarget.position - transform.position;            
             Quaternion targetRotation = Quaternion.LookRotation(toTarget);
 
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, lookAtSpeed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lookAtSpeed);
         }
-    }
+    }    
 }
