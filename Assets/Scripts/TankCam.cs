@@ -7,7 +7,7 @@ public class TankCam : FreeLookCam {
     [Range(0,90)]
     public float panRange;
     public Transform lookAtTarget;
-    public float lookAtSpeed;
+    public float lookAtSpeed;    
 
     float startRotationY;
     Vector3 currentRotation;
