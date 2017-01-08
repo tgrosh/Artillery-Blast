@@ -1649,6 +1649,7 @@ MonoBehaviour:
   zoomSpeed: 0.1
   slowMoTimeScale: 0.25
   deltaTimeRatio: 0.02
+  focusDelay: 0.5
 --- !u!114 &114745356578338024
 MonoBehaviour:
   m_ObjectHideFlags: 1

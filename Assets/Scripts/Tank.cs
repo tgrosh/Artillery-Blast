@@ -17,6 +17,7 @@ public class Tank : Explodable {
     public float deltaTimeRatio = .02f;
     public float focusDelay = .5f;
 
+    bool exploded;
     CannonBall incoming;
     TankCam tankCam;
     bool focusing;
@@ -93,7 +94,7 @@ public class Tank : Explodable {
     [Command] //server
     public void Cmd_Fire(float power)
     {
-        if (!cannon.reloading)
+        if (!cannon.reloading && !exploded)
         {
             cannon.Fire(power);
             Rpc_Fire();
@@ -109,7 +110,9 @@ public class Tank : Explodable {
     [ClientRpc]
     public void Rpc_Explode()
     {
+        exploded = true;
         base.Explode();
+        cannon.angleSlider = null;
 
         EndGame();
     }
@@ -131,6 +134,7 @@ public class Tank : Explodable {
     [Server]
     public override void Explode()
     {
+        exploded = true;
         Rpc_Explode();
     }
     
