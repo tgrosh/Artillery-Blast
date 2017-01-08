@@ -15,9 +15,12 @@ public class Tank : Explodable {
     public float zoomSpeed = .25f;
     public float slowMoTimeScale = .25f;
     public float deltaTimeRatio = .02f;
+    public float focusDelay = .5f;
 
     CannonBall incoming;
-    float origCamFieldOfView;
+    TankCam tankCam;
+    bool focusing;
+    float currentFocusDelay = 0f;
 
     public override void OnStartClient()
     {
@@ -29,7 +32,7 @@ public class Tank : Explodable {
             }
         }
         
-        origCamFieldOfView = Camera.main.fieldOfView;
+        tankCam = Camera.main.transform.root.GetComponent<TankCam>();
 
         base.OnStartClient();
     }
@@ -49,21 +52,20 @@ public class Tank : Explodable {
     void FixedUpdate()
     {
         if (isLocalPlayer) return;
-
-        if (incoming != null)
+        
+        if (focusing)
         {
-            Camera.main.transform.root.GetComponent<TankCam>().lookAtTarget = incoming.transform;
-
-            Camera.main.fieldOfView = Mathf.SmoothStep(Camera.main.fieldOfView, zoomInDistance, zoomSpeed);
-
-            Time.timeScale = slowMoTimeScale;
-            Time.fixedDeltaTime = deltaTimeRatio * Time.timeScale;            
+            currentFocusDelay = 0;
+            tankCam.FocusOn(transform, 10, .25f);        
+        } else if (currentFocusDelay < focusDelay)
+        {
+            currentFocusDelay += Time.deltaTime;
         } else
         {
-            Camera.main.transform.root.GetComponent<TankCam>().lookAtTarget = null;
-            Camera.main.fieldOfView = origCamFieldOfView;
-            Time.timeScale = 1f;
+            tankCam.ClearFocus();
         }
+        
+        focusing = (incoming != null);
     }
 
     // Update is called once per frame
@@ -108,15 +110,19 @@ public class Tank : Explodable {
     public void Rpc_Explode()
     {
         base.Explode();
-        
-        Camera.main.transform.root.GetComponent<TankCam>().lookAtTarget = null;
-        Camera.main.fieldOfView = origCamFieldOfView;
-        Time.timeScale = 1f;
+
+        EndGame();
+    }
+
+    void EndGame()
+    {
+        focusing = false;
 
         if (isLocalPlayer)
         {
             GameObject.FindObjectOfType<UI>().YouLose();
-        } else
+        }
+        else
         {
             GameObject.FindObjectOfType<UI>().YouWin();
         }
