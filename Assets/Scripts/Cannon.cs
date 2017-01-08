@@ -13,9 +13,9 @@ public class Cannon : NetworkBehaviour {
     public Image reloadImage;
 
     [HideInInspector]
-    public Slider angleSlider;
+    public RadialSlider angleSlider;
     [HideInInspector]
-    public Slider powerSlider;
+    public VerticalSlider powerSlider;
     [HideInInspector]
     public bool reloading;
 

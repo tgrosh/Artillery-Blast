@@ -42,8 +42,8 @@ public class Tank : Explodable {
     {
         Tank.localPlayer = this;
         
-        cannon.angleSlider = GameObject.Find("AngleSlider").GetComponent<Slider>();
-        cannon.powerSlider = GameObject.Find("PowerSlider").GetComponent<Slider>();
+        cannon.angleSlider = GameObject.Find("AngleSlider").GetComponentInChildren<RadialSlider>();
+        cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();
 
         GetComponent<SphereCollider>().enabled = false;
 
