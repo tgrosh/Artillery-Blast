@@ -528,6 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224541735734933448}
   - component: {fileID: 114302011603131616}
+  - component: {fileID: 222322238040480276}
   m_Layer: 5
   m_Name: VerticalSlider
   m_TagString: Untagged
@@ -2058,6 +2059,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1593148545012274}
+--- !u!222 &222322238040480276
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583705536263840}
 --- !u!222 &222349534502695828
 CanvasRenderer:
   m_ObjectHideFlags: 1

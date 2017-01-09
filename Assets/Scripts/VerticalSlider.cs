@@ -64,7 +64,7 @@ public class VerticalSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             while (Application.isPlaying)
             {
                 if (isPointerDown)
-                {                   
+                {  
                     RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, Input.mousePosition, ray.eventCamera, out localPos);
                     
                     value = (int)(minValue + (((localPos.y / (rect.rect.height)) * maxValue) - minValue));
