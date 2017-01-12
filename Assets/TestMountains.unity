@@ -14,9 +14,9 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -2207,7 +2207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2763443
+      value: -7.64
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2215,19 +2215,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_RootOrder
@@ -2235,15 +2235,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 1.1923007
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalScale.y
-      value: 25.000015
+      value: 1.1923008
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
       propertyPath: m_LocalScale.z
-      value: 25.000015
+      value: 1.1923008
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4eb99c2a57f01e54f9aa3affc578fe22, type: 3}
