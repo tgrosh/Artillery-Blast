@@ -10,6 +10,7 @@ public class TankCam : FreeLookCam {
     public float focusSpeed;
 
     Quaternion origRotation;
+    Quaternion origPivotRotation;
     Vector3 currentRotation;
     bool userLookEnabled;
     float origCamFieldOfView;
@@ -18,14 +19,16 @@ public class TankCam : FreeLookCam {
     float deltaTimeRatio = .02f;
     Vector3 toTarget;
     Quaternion targetRotation;
+    Quaternion targetPivotRotation;
 
     // Use this for initialization
-    protected override void Start () {
-        base.Start();
-        
-        origRotation = transform.rotation;
+    protected override void Start () {        
+        origRotation = transform.localRotation;
+        origPivotRotation = m_Pivot.transform.localRotation;
         origCamFieldOfView = Camera.main.fieldOfView;
         zoomInDistance = origCamFieldOfView;
+
+        base.Start();
     }
 
     // Update is called once per frame
@@ -33,13 +36,14 @@ public class TankCam : FreeLookCam {
         if (this.userLookEnabled && this.focusTarget == null)
         {
             base.Update();
-        } else if (this.focusTarget == null)
+        } else
         {
-            m_Pivot.transform.localRotation = Quaternion.identity;
+            m_LookAngle = 0f;
+            m_TiltAngle = 0f;
         }
 
         userLookEnabled = Input.GetMouseButton(1);
-        
+
         ClampPanRange();
     }
 
@@ -49,12 +53,15 @@ public class TankCam : FreeLookCam {
         {
             toTarget = focusTarget.position - transform.position;
             targetRotation = Quaternion.LookRotation(toTarget);
+            targetPivotRotation = Quaternion.identity;
         } else
         {
             targetRotation = origRotation;
+            targetPivotRotation = origPivotRotation;
         }
 
-        transform.localRotation = Quaternion.Slerp(transform.rotation, targetRotation, focusSpeed);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, focusSpeed);
+        m_Pivot.transform.localRotation = Quaternion.Slerp(m_Pivot.transform.localRotation, targetPivotRotation, focusSpeed);
 
         Camera.main.fieldOfView = Mathf.SmoothStep(Camera.main.fieldOfView, zoomInDistance, focusSpeed*2);            
         Time.timeScale = slowMoTimeScale;
@@ -63,16 +70,18 @@ public class TankCam : FreeLookCam {
     
     void ClampPanRange()
     {
-        currentRotation = transform.rotation.eulerAngles;
-        if (currentRotation.y < 180f && currentRotation.y > origRotation.y + panRange)
+        currentRotation = transform.localRotation.eulerAngles;
+        
+        if (currentRotation.y > panRange && currentRotation.y < 180)
         {
-            currentRotation.y = origRotation.y + panRange;
+            currentRotation.y = panRange;
         }
-        if (currentRotation.y > 180f && currentRotation.y - 360f < origRotation.y - panRange)
+        else if (currentRotation.y < 360 - panRange && currentRotation.y > 180)
         {
-            currentRotation.y = origRotation.y - panRange + 360f;
+            currentRotation.y = 360 - panRange;
         }
-        transform.rotation = Quaternion.Euler(currentRotation);
+
+        transform.localRotation = Quaternion.Euler(currentRotation);
     } 
 
     public void FocusOn(Transform target, float zoom, float timeScale)
