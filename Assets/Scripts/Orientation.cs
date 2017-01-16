@@ -7,6 +7,8 @@ public class Orientation : NetworkBehaviour {
     public GameObject cameraDolly;
     public SpawnPosition leftSpawn;
     public SpawnPosition rightSpawn;
+    public Wind windPrefab;
+    public WindAxis windAxis;
 
     void Awake()
     {
@@ -21,9 +23,19 @@ public class Orientation : NetworkBehaviour {
             t.cam = Camera.main.transform.root.GetComponentInChildren<TankCam>();
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public override void OnStartServer()
+    {
+        Wind wind = Instantiate(windPrefab, transform);
+        wind.axis = windAxis;
+        NetworkServer.Spawn(wind.gameObject);
+
+        base.OnStartServer();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}    
 }
+

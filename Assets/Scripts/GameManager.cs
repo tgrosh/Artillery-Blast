@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class GameManager : NetworkBehaviour {
-    public Wind windPrefab;
     public Orientation[] orientations;
     
     void Awake()
@@ -18,13 +17,5 @@ public class GameManager : NetworkBehaviour {
     
     void Start () {
         
-    }
-    
-    public override void OnStartServer()
-    {
-        Wind wind = Instantiate(windPrefab, transform);
-        NetworkServer.Spawn(wind.gameObject);
-
-        base.OnStartServer();
-    }      
+    }       
 }

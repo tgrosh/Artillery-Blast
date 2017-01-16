@@ -3155,6 +3155,9 @@ MonoBehaviour:
   cameraDolly: {fileID: 1606418480598408}
   leftSpawn: {fileID: 114095563706137664}
   rightSpawn: {fileID: 114621144217804660}
+  windPrefab: {fileID: 114569186819857510, guid: 3185ea6b08732454089b53a9b6c5a462,
+    type: 2}
+  windAxis: 0
 --- !u!114 &114182852355396328
 MonoBehaviour:
   m_ObjectHideFlags: 1

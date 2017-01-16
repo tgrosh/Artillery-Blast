@@ -17,6 +17,7 @@ public class Wind : NetworkBehaviour {
     public AudioSource windLowAudio;
     public AudioSource windMediumAudio;
     public AudioSource windHighAudio;
+    public WindAxis axis;
 
     [SyncVar]
     int magnitude;
@@ -79,8 +80,22 @@ public class Wind : NetworkBehaviour {
             if (!cannonBallsAffected.Contains(cannonBall))
             {
                 cannonBallsAffected.Add(cannonBall);
-                cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(magnitude, 0, 0) * windScale);
+                Vector3 windDirection;
+                if (axis == WindAxis.x)
+                {
+                    windDirection = Vector3.right * magnitude;
+                } else
+                {
+                    windDirection = Vector3.forward * magnitude;
+                }
+                cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(windDirection * magnitude * windScale);
             }
         }
 	}
+}
+
+public enum WindAxis
+{
+    x,
+    z
 }
