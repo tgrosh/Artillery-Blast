@@ -42,13 +42,11 @@ public class RadialSlider: MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		isPointerDown= true;
-		//Debug.Log("mousedown");
 	}
 
 	public void OnPointerUp(PointerEventData eventData)
 	{
 		isPointerDown= false;
-		//Debug.Log("mousedown");
 	}
 
 	// mainloop

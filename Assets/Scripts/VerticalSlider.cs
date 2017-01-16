@@ -45,13 +45,11 @@ public class VerticalSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void OnPointerDown(PointerEventData eventData)
     {
         isPointerDown = true;
-        //Debug.Log("mousedown");
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         isPointerDown = false;
-        //Debug.Log("mousedown");
     }
 
     IEnumerator TrackPointer()

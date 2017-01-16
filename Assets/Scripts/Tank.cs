@@ -16,64 +16,61 @@ public class Tank : Explodable {
     public float slowMoTimeScale = .25f;
     public float deltaTimeRatio = .02f;
     public float focusDelay = .5f;
+    public TankCam cam;
+
+    [SyncVar(hook="SpawnPositionHook")]
+    Vector3 spawnPosition;
+    [SyncVar(hook="SpawnRotationHook")]
+    Quaternion spawnRotation;
 
     bool exploded;
     CannonBall incoming;
-    TankCam tankCam;
     bool focusing;
     float currentFocusDelay = 0f;
 
-    public override void OnStartClient()
+    void Start()
     {
-        foreach (Transform childTransform in transform)
+        if (isClient)
         {
-            if (childTransform.CompareTag("TankColor"))
+            foreach (Transform childTransform in transform)
             {
-                childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", playerColor);
+                if (childTransform.CompareTag("TankColor"))
+                {
+                    childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", playerColor);
+                }
             }
         }
-        
-        tankCam = Camera.main.transform.root.GetComponent<TankCam>();
 
-        base.OnStartClient();
+        if (isLocalPlayer)
+        {
+            Tank.localPlayer = this;
+
+            cannon.angleSlider = GameObject.Find("AngleSlider").GetComponentInChildren<RadialSlider>();
+            cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();
+
+            GetComponent<SphereCollider>().enabled = false;
+        }
     }
-
-    public override void OnStartLocalPlayer()
-    {
-        Tank.localPlayer = this;
         
-        cannon.angleSlider = GameObject.Find("AngleSlider").GetComponentInChildren<RadialSlider>();
-        cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();
-
-        GetComponent<SphereCollider>().enabled = false;
-
-        base.OnStartLocalPlayer();
-    }
-
     void FixedUpdate()
     {
-        if (isLocalPlayer) return;
+        if (isLocalPlayer || cam == null) return;
         
         if (focusing)
         {
             currentFocusDelay = 0;
-            tankCam.FocusOn(transform, 10, .25f);        
+            cam.FocusOn(transform, 10, .25f);        
         } else if (currentFocusDelay < focusDelay)
         {
             currentFocusDelay += Time.deltaTime;
         } else
         {
-            tankCam.ClearFocus();
+            cam.ClearFocus();
         }
         
         focusing = (incoming != null);
     }
-
-    // Update is called once per frame
-    void Update () {
-        
-    }
-
+    
     void OnTriggerEnter(Collider col)
     {
         CannonBall ball = col.GetComponentInParent<CannonBall>();
@@ -104,7 +101,7 @@ public class Tank : Explodable {
     [ClientRpc]
     public void Rpc_Fire()
     {
-        cannon.Rpc_Fire();
+        cannon.ShowCannonFire();
     }
 
     [ClientRpc]
@@ -138,4 +135,24 @@ public class Tank : Explodable {
         Rpc_Explode();
     }
     
+    [Command]
+    public void Cmd_SetPosition()
+    {
+        //set tank position variables
+        Transform pos = LobbyMan.singleton.GetStartPosition();
+        spawnPosition = pos.position;
+        spawnRotation = pos.rotation;
+    }
+
+    void SpawnPositionHook(Vector3 position)
+    {
+        //hook from syncvar
+        transform.position = position;
+    }
+
+    void SpawnRotationHook(Quaternion rotation)
+    {
+        //hook from syncvar
+        transform.rotation = rotation;
+    }
 }

@@ -9,15 +9,11 @@ public class SpawnPosition : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        transform.Find("SpawnAvatar").gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (player != null)
-        {
-            playerText.text = player.playerName;
-        }
     }
 
     void OnTriggerEnter(Collider col)
@@ -26,6 +22,7 @@ public class SpawnPosition : MonoBehaviour {
         if (tank != null)
         {
             player = tank;
+            playerText.text = player.playerName;
         }
     }
 }

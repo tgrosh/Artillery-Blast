@@ -60,9 +60,8 @@ public class Cannon : NetworkBehaviour {
             reloading = true;
         }
     }
-
-    [ClientRpc]
-    public void Rpc_Fire()
+    
+    public void ShowCannonFire()
     {
         cannonFireSound.Play(); //needs to happen on client
         ParticleSystem cannonFire = Instantiate(cannonFirePrefab, projectileSpawner.position, gameObject.transform.localRotation);
