@@ -83,10 +83,10 @@ public class Wind : NetworkBehaviour {
                 Vector3 windDirection;
                 if (axis == WindAxis.x)
                 {
-                    windDirection = Vector3.right * magnitude;
+                    windDirection = Vector3.right;
                 } else
                 {
-                    windDirection = Vector3.forward * magnitude;
+                    windDirection = Vector3.forward;
                 }
                 cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(windDirection * magnitude * windScale);
             }

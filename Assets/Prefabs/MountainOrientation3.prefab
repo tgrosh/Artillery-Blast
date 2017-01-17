@@ -3559,7 +3559,7 @@ MonoBehaviour:
   rightSpawn: {fileID: 114021560303073238}
   windPrefab: {fileID: 114569186819857510, guid: 3185ea6b08732454089b53a9b6c5a462,
     type: 2}
-  windAxis: 0
+  windAxis: 1
 --- !u!114 &114879793181638406
 MonoBehaviour:
   m_ObjectHideFlags: 1

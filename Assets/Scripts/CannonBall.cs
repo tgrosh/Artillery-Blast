@@ -1,24 +1,46 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityStandardAssets.Cameras;
 
 public class CannonBall : Explodable
 {
+    public float proximitySensorDelay;
+
+    float currentProximitySensorDelay;
+    bool proximitySensorActive;
+    Tank proximityTarget;
+
     void Start()
     {
-        
+    }
+
+    void Update()
+    {
+        if (currentProximitySensorDelay < proximitySensorDelay)
+        {
+            currentProximitySensorDelay += Time.deltaTime;
+        } else if (!proximitySensorActive)
+        {
+            proximitySensorActive = true;
+        }
     }
 
     [Server]
     void OnTriggerEnter(Collider col)
     {
-        if (isServer && col.GetComponent<Tank>() == null)
+        if (proximitySensorActive && proximityTarget == null)
         {
-            Explode(col.gameObject);
+            proximityTarget = col.transform.root.GetComponent<Tank>();
+
+            if (proximityTarget != null)
+            {
+                proximityTarget.Focus(this);
+            }
         }
     }
-    
+
     [Server]
     void OnCollisionEnter(Collision col)
     {
@@ -27,7 +49,7 @@ public class CannonBall : Explodable
             Explode(col.gameObject);
         }
     }
-    
+
     [Server]
     void Explode(GameObject collider)
     {
@@ -38,9 +60,13 @@ public class CannonBall : Explodable
             explodable.Explode();
         }
 
+        if (proximityTarget != null)
+        {
+            proximityTarget.UnFocus();
+        }
         Explode();
     }
-
+    
     [ClientRpc]
     public void Rpc_Explode()
     {

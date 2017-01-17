@@ -15,7 +15,7 @@ public class Tank : Explodable {
     public float zoomSpeed = .25f;
     public float slowMoTimeScale = .25f;
     public float deltaTimeRatio = .02f;
-    public float focusDelay = .5f;
+    public float clearFocusDelay = 2f;
     public TankCam cam;
 
     [SyncVar(hook="SpawnPositionHook")]
@@ -24,20 +24,14 @@ public class Tank : Explodable {
     Quaternion spawnRotation;
 
     bool exploded;
-    CannonBall incoming;
-    bool focusing;
-    float currentFocusDelay = 0f;
 
     void Start()
     {
-        if (isClient)
+        foreach (Transform childTransform in transform)
         {
-            foreach (Transform childTransform in transform)
+            if (childTransform.CompareTag("TankColor"))
             {
-                if (childTransform.CompareTag("TankColor"))
-                {
-                    childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", playerColor);
-                }
+                childTransform.gameObject.GetComponent<MeshRenderer>().materials[0].SetColor("_Color", playerColor);
             }
         }
 
@@ -54,31 +48,36 @@ public class Tank : Explodable {
         
     void FixedUpdate()
     {
-        if (isLocalPlayer || cam == null) return;
-        
-        if (focusing)
-        {
-            currentFocusDelay = 0;
-            cam.FocusOn(transform, 10, .25f);        
-        } else if (currentFocusDelay < focusDelay)
-        {
-            currentFocusDelay += Time.deltaTime;
-        } else
-        {
-            cam.ClearFocus();
-        }
-        
-        focusing = (incoming != null);
     }
-    
-    void OnTriggerEnter(Collider col)
-    {
-        CannonBall ball = col.GetComponentInParent<CannonBall>();
 
-        if (ball != null)
-        {
-            incoming = ball;
-        }
+    [Server]
+    public void Focus(CannonBall ball)
+    {
+        Rpc_Focus();
+    }
+
+    [ClientRpc]
+    public void Rpc_Focus()
+    {
+        cam.FocusOn(transform, 10, slowMoTimeScale);
+    }
+
+    [Server]
+    public void UnFocus()
+    {
+        StartCoroutine(DelayedUnFocus());        
+    }
+
+    IEnumerator DelayedUnFocus()
+    {
+        yield return new WaitForSecondsRealtime(clearFocusDelay);
+        Rpc_UnFocus();
+    }
+        
+    [ClientRpc]
+    public void Rpc_UnFocus()
+    {
+        cam.ClearFocus();
     }
 
     [Command]
@@ -116,8 +115,6 @@ public class Tank : Explodable {
 
     void EndGame()
     {
-        focusing = false;
-
         if (isLocalPlayer)
         {
             GameObject.FindObjectOfType<UI>().YouLose();

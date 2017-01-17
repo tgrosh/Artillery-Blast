@@ -1647,9 +1647,9 @@ MonoBehaviour:
   cannon: {fileID: 114298630540057516}
   zoomInDistance: 10
   zoomSpeed: 0.1
-  slowMoTimeScale: 0.25
+  slowMoTimeScale: 0.1
   deltaTimeRatio: 0.02
-  focusDelay: 0.5
+  cam: {fileID: 0}
 --- !u!114 &114745356578338024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1725,7 +1725,7 @@ SphereCollider:
   m_GameObject: {fileID: 168856}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
