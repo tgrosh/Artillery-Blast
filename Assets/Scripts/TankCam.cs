@@ -110,7 +110,12 @@ public class TankCam : FreeLookCam {
     public void ClearFocus()
     {
         focusTarget = null;
-        zoomInDistance = origCamFieldOfView;
+        ResetFocus();
+    }
+
+    public void ResetFocus()
+    {
         slowMoTimeScale = 1f;
+        zoomInDistance = origCamFieldOfView;
     }
 }

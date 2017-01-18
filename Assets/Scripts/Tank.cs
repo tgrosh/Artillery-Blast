@@ -40,9 +40,7 @@ public class Tank : Explodable {
             Tank.localPlayer = this;
 
             cannon.angleSlider = GameObject.Find("AngleSlider").GetComponentInChildren<RadialSlider>();
-            cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();
-
-            GetComponent<SphereCollider>().enabled = false;
+            cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();            
         }
     }
         
@@ -70,10 +68,17 @@ public class Tank : Explodable {
 
     IEnumerator DelayedUnFocus()
     {
+        Rpc_ResetFocus();
         yield return new WaitForSecondsRealtime(clearFocusDelay);
         Rpc_UnFocus();
     }
-        
+
+    [ClientRpc]
+    public void Rpc_ResetFocus()
+    {
+        cam.ResetFocus();
+    }
+
     [ClientRpc]
     public void Rpc_UnFocus()
     {
@@ -109,6 +114,7 @@ public class Tank : Explodable {
         exploded = true;
         base.Explode();
         cannon.angleSlider = null;
+        cam.gameObject.GetComponent<CameraShaker>().Shake();
 
         EndGame();
     }

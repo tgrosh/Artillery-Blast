@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 114482612529399814}
   - component: {fileID: 114670339438360414}
   - component: {fileID: 114662598584979454}
+  - component: {fileID: 114262144992912178}
   m_Layer: 0
   m_Name: TankCameraRig
   m_TagString: Untagged
@@ -3201,6 +3202,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b8d6f7c5fc08441938574673fecc90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114262144992912178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386669690912122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6437d3998cf30341a582f48261d2b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1.5
+  speed: 20
+  magnitude: 0.5
+  test: 0
+  shaking: 0
 --- !u!114 &114411164925559408
 MonoBehaviour:
   m_ObjectHideFlags: 1

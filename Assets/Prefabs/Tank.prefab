@@ -1648,7 +1648,7 @@ MonoBehaviour:
   zoomSpeed: 0.1
   slowMoTimeScale: 0.1
   deltaTimeRatio: 0.02
-  clearFocusDelay: 2
+  clearFocusDelay: 3
   cam: {fileID: 0}
 --- !u!114 &114745356578338024
 MonoBehaviour:
