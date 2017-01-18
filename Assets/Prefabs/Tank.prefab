@@ -246,7 +246,6 @@ GameObject:
   - component: {fileID: 114914568922617132}
   - component: {fileID: 114223488034781794}
   - component: {fileID: 114974105308665824}
-  - component: {fileID: 135889469841501204}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -307,7 +306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &194176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1648,7 @@ MonoBehaviour:
   zoomSpeed: 0.1
   slowMoTimeScale: 0.1
   deltaTimeRatio: 0.02
+  clearFocusDelay: 2
   cam: {fileID: 0}
 --- !u!114 &114745356578338024
 MonoBehaviour:
@@ -1717,15 +1717,3 @@ MonoBehaviour:
     type: 2}
   explosionForce: 0
   explosionRadius: 0
---- !u!135 &135889469841501204
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168856}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
