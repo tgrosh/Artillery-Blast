@@ -22,12 +22,13 @@ public class Tank : Explodable {
     Vector3 spawnPosition;
     [SyncVar(hook="SpawnRotationHook")]
     Quaternion spawnRotation;
+    Animator tankAnimator;
 
     bool exploded;
 
     void Start()
     {
-        foreach (Transform childTransform in transform)
+        foreach (Transform childTransform in transform.FindChild("TankBody").transform)
         {
             if (childTransform.CompareTag("TankColor"))
             {
@@ -42,6 +43,8 @@ public class Tank : Explodable {
             cannon.angleSlider = GameObject.Find("AngleSlider").GetComponentInChildren<RadialSlider>();
             cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<VerticalSlider>();            
         }
+
+        tankAnimator = GetComponent<Animator>();
     }
         
     void FixedUpdate()
@@ -106,11 +109,13 @@ public class Tank : Explodable {
     public void Rpc_Fire()
     {
         cannon.ShowCannonFire();
+        tankAnimator.SetTrigger("Fire");
     }
 
     [ClientRpc]
     public void Rpc_Explode()
     {
+        tankAnimator.StopPlayback();
         exploded = true;
         base.Explode();
         cannon.angleSlider = null;
