@@ -36,7 +36,6 @@ GameObject:
   - component: {fileID: 4071439640959844}
   - component: {fileID: 54725269797951080}
   - component: {fileID: 114069400648806142}
-  - component: {fileID: 114215383988737834}
   - component: {fileID: 114586954498327144}
   m_Layer: 0
   m_Name: TankCameraRig
@@ -192,23 +191,6 @@ MonoBehaviour:
   panRange: 55
   focusTarget: {fileID: 0}
   focusSpeed: 0.05
---- !u!114 &114215383988737834
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1682833635507148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b04ec3bda6b7747aa53936ef3b0ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipMoveTime: 0.05
-  returnTime: 0.4
-  sphereCastRadius: 0.1
-  visualiseInEditor: 1
-  closestDistance: 0.5
-  dontClipTag: Player
 --- !u!114 &114586954498327144
 MonoBehaviour:
   m_ObjectHideFlags: 1

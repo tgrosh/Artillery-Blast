@@ -71,7 +71,6 @@ GameObject:
   - component: {fileID: 4516124742691572}
   - component: {fileID: 54771115888624928}
   - component: {fileID: 114445351425673750}
-  - component: {fileID: 114955611794293810}
   - component: {fileID: 114258192597311396}
   - component: {fileID: 114663897126577302}
   m_Layer: 0
@@ -258,23 +257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6437d3998cf30341a582f48261d2b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114955611794293810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1891199963725932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b04ec3bda6b7747aa53936ef3b0ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipMoveTime: 0.05
-  returnTime: 0.4
-  sphereCastRadius: 0.1
-  visualiseInEditor: 1
-  closestDistance: 0.5
-  dontClipTag: Player
+  duration: 0.5
+  speed: 1
+  magnitude: 0.1
+  test: 0
+  shaking: 0
 --- !u!124 &124385167325554362
 Behaviour:
   m_ObjectHideFlags: 1
