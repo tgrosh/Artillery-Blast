@@ -1652,6 +1652,7 @@ MonoBehaviour:
   projectileSpawner: {fileID: 473312}
   reloadTime: 3
   reloadImage: {fileID: 11408498}
+  powerScale: 1.25
   angleSlider: {fileID: 0}
   powerSlider: {fileID: 0}
   reloading: 0

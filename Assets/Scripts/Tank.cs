@@ -121,11 +121,13 @@ public class Tank : Explodable {
         cannon.angleSlider = null;
         cam.gameObject.GetComponent<CameraShaker>().Shake();
 
-        EndGame();
+        StartCoroutine(EndGame());
     }
 
-    void EndGame()
+    [Client]
+    IEnumerator EndGame()
     {
+        yield return new WaitForSecondsRealtime(3f);
         if (isLocalPlayer)
         {
             GameObject.FindObjectOfType<UI>().YouLose();
@@ -134,6 +136,12 @@ public class Tank : Explodable {
         {
             GameObject.FindObjectOfType<UI>().YouWin();
         }
+    }
+    
+    [Command]
+    public void Cmd_ReturnToLobby()
+    {
+        GameObject.FindObjectOfType<LobbyMan>().ServerReturnToLobby();
     }
 
     [Server]

@@ -11,6 +11,7 @@ public class Cannon : NetworkBehaviour {
     public Transform projectileSpawner;
     public float reloadTime;
     public Image reloadImage;
+    public float powerScale = 1.0f;
 
     [HideInInspector]
     public RadialSlider angleSlider;
@@ -54,7 +55,7 @@ public class Cannon : NetworkBehaviour {
         if (!reloading)
         {            
             GameObject projectile = (GameObject)Instantiate(projectilePrefab, projectileSpawner.position, gameObject.transform.localRotation);
-            projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power, ForceMode.Impulse);
+            projectile.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power * powerScale, ForceMode.Impulse);
             NetworkServer.Spawn(projectile);
 
             reloading = true;

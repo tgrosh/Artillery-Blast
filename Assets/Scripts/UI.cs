@@ -21,7 +21,7 @@ public class UI : MonoBehaviour {
 
     public void EndGame()
     {
-        GameObject.FindObjectOfType<LobbyManager>().SendReturnToLobby();
+        Tank.localPlayer.Cmd_ReturnToLobby();
     }
 
     public void Exit()

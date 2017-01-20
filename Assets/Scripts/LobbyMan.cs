@@ -9,15 +9,19 @@ public class LobbyMan : LobbyManager {
 
     public override void OnServerSceneChanged(string sceneName)
     {
-        Orientation[] orientations = FindObjectOfType<GameManager>().orientations;
-        int orientationIndex = Random.Range(0, orientations.Length - 1);
-        
-        Orientation selectedOrientation = orientations[orientationIndex];
-        GameObject obj = Instantiate(selectedOrientation.gameObject);
-        obj.SetActive(true);
-        
-        NetworkServer.Spawn(obj);
+        if (sceneName == playScene)
+        {
+            Orientation[] orientations = FindObjectOfType<GameManager>().orientations;
+            int orientationIndex = Random.Range(0, orientations.Length - 1);
 
-        base.OnServerSceneChanged(sceneName);
-    }    
+            Orientation selectedOrientation = orientations[orientationIndex];
+            GameObject obj = Instantiate(selectedOrientation.gameObject);
+            obj.SetActive(true);
+
+            NetworkServer.Spawn(obj);
+
+            base.OnServerSceneChanged(sceneName);
+        }
+    }
+
 }
