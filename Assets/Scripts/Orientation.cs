@@ -12,15 +12,29 @@ public class Orientation : NetworkBehaviour {
 
     void Awake()
     {
-        //cameraDolly.SetActive(false);
+        Tank.OnTankReady += Tank_OnTankReady;
     }
 
-	// Use this for initialization
-	void Start () {
-        Tank.localPlayer.Cmd_SetPosition();
-        foreach (Tank t in FindObjectsOfType<Tank>())
+    private void Tank_OnTankReady(Tank tank)
+    {
+        TankSetup();
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+        TankSetup();
+    }
+
+    private static void TankSetup()
+    {
+        if (Tank.localPlayer != null)
         {
-            t.cam = Camera.main.transform.root.GetComponentInChildren<TankCam>();
+            Tank.localPlayer.Cmd_SetPosition();
+            foreach (Tank t in FindObjectsOfType<Tank>())
+            {
+                t.cam = Camera.main.transform.root.GetComponentInChildren<TankCam>();
+            }
         }
     }
 

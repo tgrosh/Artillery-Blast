@@ -18,6 +18,9 @@ public class Tank : Explodable {
     public float clearFocusDelay = 2f;
     public TankCam cam;
 
+    public static event TankReadyEventHandler OnTankReady;
+    public delegate void TankReadyEventHandler(Tank tank);    
+
     [SyncVar(hook="SpawnPositionHook")]
     Vector3 spawnPosition;
     [SyncVar(hook="SpawnRotationHook")]
@@ -45,6 +48,8 @@ public class Tank : Explodable {
         }
 
         tankAnimator = GetComponent<Animator>();
+
+        Tank.OnTankReady(this);
     }
         
     void FixedUpdate()
