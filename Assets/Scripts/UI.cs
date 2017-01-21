@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using System;
 using Prototype.NetworkLobby;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour {
     public GameObject youWinPrefab;
@@ -47,15 +48,21 @@ public class UI : MonoBehaviour {
     public void NewMatch()
     {
         NetManager.singleton.StopHost();
-        //GameObject.FindObjectOfType<AutoMatch>().EndMatch();
-        //GameObject.FindObjectOfType<LobbyManager>().StopHost();
-        //GameObject.FindObjectOfType<LobbyManager>().StopClient();
-        //GameObject.FindObjectOfType<LobbyManager>().StopMatchMaker();
-        //LoadScene(2);
     }
 
     public void Rematch()
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    
+    public static void Log(string message)
+    {
+        GameObject DebugLogText = GameObject.Find("DebugLogText");
+
+        if (DebugLogText != null)
+        {
+            DebugLogText.GetComponent<Text>().text += "\n" + message;
+        }
+        Debug.Log(message);
     }
 }

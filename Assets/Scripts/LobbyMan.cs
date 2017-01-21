@@ -23,5 +23,4 @@ public class LobbyMan : LobbyManager {
             base.OnServerSceneChanged(sceneName);
         }
     }
-
 }

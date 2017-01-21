@@ -19,22 +19,22 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.077 seconds
+- Completed reload, in  0.060 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.953415 ms
+UnloadTime: 0.945310 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 24c0 -> priority: 1 
-  Thread -> id: 269c -> priority: 1 
+  Thread -> id: 36cc -> priority: 1 
+  Thread -> id: 33a0 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.753516 ms
+UnloadTime: 6.023691 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2439.
-Total: 0.964523 ms (FindLiveObjects: 0.130884 ms CreateObjectMapping: 0.078050 ms MarkObjects: 0.744180 ms  DeleteObjects: 0.010206 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2469.
+Total: 0.987337 ms (FindLiveObjects: 0.126982 ms CreateObjectMapping: 0.077450 ms MarkObjects: 0.770597 ms  DeleteObjects: 0.011407 ms)
 
 MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
@@ -49,19 +49,76 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.598886 ms
-NullReferenceException: Object reference not set to an instance of an object
-  at Tank.Start () [0x00000] in <filename unknown>:0 
+UnloadTime: 0.495920 ms
+Tank for local player is starting
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is now listenting for tanks
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation has started
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting up tanks
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting position for local tank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server]Tank for Player1 is being asked to set position
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+There are 2 start positions available
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server]Tank for Player1 is not positioned. Setting position to SpawnLeft (UnityEngine.Transform)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting camera for Player1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 9223.
-Total: 2.312994 ms (FindLiveObjects: 0.469503 ms CreateObjectMapping: 0.103566 ms MarkObjects: 1.699698 ms  DeleteObjects: 0.039625 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9229.
+Total: 5.138719 ms (FindLiveObjects: 0.687444 ms CreateObjectMapping: 0.122779 ms MarkObjects: 2.157793 ms  DeleteObjects: 2.170402 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.617636 ms
+Tank for remote player is starting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2647.
-Total: 2.261961 ms (FindLiveObjects: 0.183418 ms CreateObjectMapping: 0.060639 ms MarkObjects: 1.549300 ms  DeleteObjects: 0.468302 ms)
+Orientation has found the tank is ready for Player2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting up tanks
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting position for local tank
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server]Tank for Player1 is being asked to set position
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting camera for Player2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Orientation is setting camera for Player1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server]Tank for Player2 is being asked to set position
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

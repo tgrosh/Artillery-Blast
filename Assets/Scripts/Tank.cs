@@ -26,7 +26,7 @@ public class Tank : Explodable {
     [SyncVar(hook="SpawnRotationHook")]
     Quaternion spawnRotation;
     Animator tankAnimator;
-
+    
     bool exploded;
 
     void Start()
@@ -49,7 +49,10 @@ public class Tank : Explodable {
 
         tankAnimator = GetComponent<Animator>();
 
-        Tank.OnTankReady(this);
+        if (Tank.OnTankReady != null)
+        {
+            Tank.OnTankReady(this);
+        }
     }
         
     void FixedUpdate()
@@ -159,10 +162,13 @@ public class Tank : Explodable {
     [Command]
     public void Cmd_SetPosition()
     {
-        //set tank position variables
-        Transform pos = LobbyMan.singleton.GetStartPosition();
-        spawnPosition = pos.position;
-        spawnRotation = pos.rotation;
+        if (transform.position == Vector3.zero)
+        {
+            //set tank position variables
+            Transform pos = LobbyMan.singleton.GetStartPosition();
+            spawnPosition = pos.position;
+            spawnRotation = pos.rotation;          
+        }
     }
 
     void SpawnPositionHook(Vector3 position)
@@ -175,5 +181,5 @@ public class Tank : Explodable {
     {
         //hook from syncvar
         transform.rotation = rotation;
-    }
+    }    
 }

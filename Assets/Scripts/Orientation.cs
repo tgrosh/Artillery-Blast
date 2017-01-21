@@ -30,11 +30,12 @@ public class Orientation : NetworkBehaviour {
     {
         if (Tank.localPlayer != null)
         {
-            Tank.localPlayer.Cmd_SetPosition();
-            foreach (Tank t in FindObjectsOfType<Tank>())
-            {
-                t.cam = Camera.main.transform.root.GetComponentInChildren<TankCam>();
-            }
+            Tank.localPlayer.Cmd_SetPosition();            
+        }
+
+        foreach (Tank t in FindObjectsOfType<Tank>())
+        {
+            t.cam = Camera.main.transform.root.GetComponentInChildren<TankCam>();
         }
     }
 
