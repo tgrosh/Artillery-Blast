@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 223289555247976204}
   - component: {fileID: 114391844528440590}
   - component: {fileID: 114323842093492310}
+  - component: {fileID: 225265001109183198}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -595,6 +596,7 @@ GameObject:
   - component: {fileID: 223735042645226148}
   - component: {fileID: 114464033118208190}
   - component: {fileID: 114426007472703536}
+  - component: {fileID: 225544563196959944}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -3268,7 +3270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Player One
 --- !u!114 &114320704118872974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4063,3 +4065,25 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: -5}
   m_SizeDelta: {x: 400, y: 36}
   m_Pivot: {x: 0, y: 1}
+--- !u!225 &225265001109183198
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355005420787638}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!225 &225544563196959944
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694216443073894}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

@@ -9,9 +9,7 @@ public class Orientation : NetworkBehaviour {
     public SpawnPosition rightSpawn;
     public Wind windPrefab;
     public WindAxis windAxis;
-
-    private GameObject uiPanel;
-
+    
     void Awake()
     {
         Tank.OnTankReady += Tank_OnTankReady;
@@ -26,17 +24,9 @@ public class Orientation : NetworkBehaviour {
     void Start()
     {
         TankSetup();
-        uiPanel = GameObject.Find("UIPanel");
-        StartCoroutine(ShowUI());
+        FindObjectOfType<UI>().ShowGameUI(this, 6f);
     }
-
-    IEnumerator ShowUI()
-    {
-        yield return new WaitForSeconds(6f);
-
-        uiPanel.GetComponent<Animator>().enabled = true;
-    }
-
+    
     private static void TankSetup()
     {
         if (Tank.localPlayer != null)

@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 223438744682474094}
   - component: {fileID: 114986133628197562}
   - component: {fileID: 114606351665573520}
+  - component: {fileID: 225093248050163386}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -346,6 +347,7 @@ GameObject:
   - component: {fileID: 223284679488085544}
   - component: {fileID: 114736357818555600}
   - component: {fileID: 114979335336563044}
+  - component: {fileID: 225713114129933500}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -4063,3 +4065,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -1.24}
   m_SizeDelta: {x: 12, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225093248050163386
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157644251394824}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!225 &225713114129933500
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1367717699051782}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

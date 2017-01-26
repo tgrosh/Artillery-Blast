@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class SpawnPosition : MonoBehaviour {
     public Text playerText;
     public Tank player;
+    public CanvasGroup canvasGroup;
 
 	// Use this for initialization
 	void Start () {
         transform.Find("SpawnAvatar").gameObject.SetActive(false);
+        canvasGroup = transform.Find("Canvas").GetComponent<CanvasGroup>();
 	}
 	
 	// Update is called once per frame

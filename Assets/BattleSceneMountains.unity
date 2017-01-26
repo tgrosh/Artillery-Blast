@@ -6166,6 +6166,22 @@ Transform:
   m_PrefabParentObject: {fileID: 4858578109338140, guid: da62d217c1d14d34f8081be4e46f74cc,
     type: 2}
   m_PrefabInternal: {fileID: 2057886556}
+--- !u!1 &874489414 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1694216443073894, guid: a558f6e130fa02f4aa9e7ebaa9b9d934,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151040861}
+--- !u!225 &874489415
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874489414}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &875132679
 Prefab:
   m_ObjectHideFlags: 0
@@ -6204,6 +6220,26 @@ Prefab:
     - target: {fileID: 4269925133145170, guid: 45a3a95800dad5d4eac1d9484b0b57ff, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 225093248050163386, guid: 45a3a95800dad5d4eac1d9484b0b57ff,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225713114129933500, guid: 45a3a95800dad5d4eac1d9484b0b57ff,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225093248050163386, guid: 45a3a95800dad5d4eac1d9484b0b57ff,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225713114129933500, guid: 45a3a95800dad5d4eac1d9484b0b57ff,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a3a95800dad5d4eac1d9484b0b57ff, type: 2}
@@ -8029,6 +8065,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1963169538269422, guid: a558f6e130fa02f4aa9e7ebaa9b9d934, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225265001109183198, guid: a558f6e130fa02f4aa9e7ebaa9b9d934,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225265001109183198, guid: a558f6e130fa02f4aa9e7ebaa9b9d934,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12110,6 +12156,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 225388321215250046, guid: a291e6e1c9fdc484193a4d43b74ce67a,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225020785498748656, guid: a291e6e1c9fdc484193a4d43b74ce67a,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225388321215250046, guid: a291e6e1c9fdc484193a4d43b74ce67a,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225020785498748656, guid: a291e6e1c9fdc484193a4d43b74ce67a,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a291e6e1c9fdc484193a4d43b74ce67a, type: 2}
   m_IsPrefabParent: 0
@@ -13472,6 +13538,26 @@ Prefab:
     - target: {fileID: 4180441683711966, guid: df1e2a0e05269be40a128a4503b56363, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 225511040177136640, guid: df1e2a0e05269be40a128a4503b56363,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225945875252694302, guid: df1e2a0e05269be40a128a4503b56363,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225511040177136640, guid: df1e2a0e05269be40a128a4503b56363,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225945875252694302, guid: df1e2a0e05269be40a128a4503b56363,
+        type: 2}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df1e2a0e05269be40a128a4503b56363, type: 2}
