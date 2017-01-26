@@ -23,6 +23,7 @@ public class SpawnPosition : MonoBehaviour {
         {
             player = tank;
             playerText.text = player.playerName;
+            playerText.color = player.playerColor;
         }
     }
 }
