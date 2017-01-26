@@ -7,27 +7,24 @@ using UnityEngine.UI;
 public class FireButton : MonoBehaviour {
     public Button button;
     public Image buttonImage;
-    public Slider progressSlider;
     public Image progressFill;
     public float reloadTime;
 
     bool reloading;
     float currentReloadTime;
-    Color progressOrigColor;
-    Color buttonColor;
+    ColorBlock origButtonColors;
 
     // Use this for initialization
     void Start () {
         button.onClick.AddListener(() => buttonOnClick());
-        progressOrigColor = progressFill.color;
-        buttonColor = buttonImage.color;
+        origButtonColors = button.colors;
     }
 
     private void buttonOnClick()
     {
         if (reloadTime > 0)
         {
-            progressFill.color = buttonColor;
+            progressFill.gameObject.SetActive(true);
             button.interactable = false;
             reloading = true;
         }
@@ -39,16 +36,15 @@ public class FireButton : MonoBehaviour {
         {
             if (currentReloadTime > reloadTime)
             {
+                progressFill.gameObject.SetActive(false);
                 button.interactable = true;
                 currentReloadTime = 0;
-                reloading = false;
-                progressSlider.enabled = false;                
+                reloading = false;              
             } else
             {
-                progressSlider.enabled = true;
                 currentReloadTime += Time.deltaTime;
-                progressSlider.value = currentReloadTime / reloadTime;
-                progressFill.color = Color.Lerp(buttonColor, progressOrigColor, progressSlider.value);
+                progressFill.fillAmount = currentReloadTime / reloadTime;
+                progressFill.color = Color.Lerp(origButtonColors.disabledColor, origButtonColors.normalColor, progressFill.fillAmount);
             }
         }
 	}

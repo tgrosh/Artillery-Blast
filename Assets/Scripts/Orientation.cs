@@ -10,7 +10,7 @@ public class Orientation : NetworkBehaviour {
     public Wind windPrefab;
     public WindAxis windAxis;
 
-    private CanvasGroup canvasGroup;
+    private GameObject uiPanel;
 
     void Awake()
     {
@@ -26,7 +26,7 @@ public class Orientation : NetworkBehaviour {
     void Start()
     {
         TankSetup();
-        canvasGroup = GameObject.Find("UI Elements").GetComponent<CanvasGroup>();
+        uiPanel = GameObject.Find("UIPanel");
         StartCoroutine(ShowUI());
     }
 
@@ -34,12 +34,7 @@ public class Orientation : NetworkBehaviour {
     {
         yield return new WaitForSeconds(6f);
 
-        float time = 1f;
-        while (canvasGroup.alpha < 1)
-        {
-            canvasGroup.alpha += Time.deltaTime / time;
-            yield return null;
-        }
+        uiPanel.GetComponent<Animator>().enabled = true;
     }
 
     private static void TankSetup()

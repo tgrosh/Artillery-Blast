@@ -10,9 +10,11 @@ public class UI : MonoBehaviour {
     public GameObject youWinPrefab;
     public GameObject youLosePrefab;
 
+    public AudioSource uiAudio;
+
     // Use this for initialization
     void Start () {
-	
+        uiAudio = transform.Find("UIAudioSource").GetComponent<AudioSource>();
 	}
 
     public void LoadScene(int level)
@@ -54,7 +56,7 @@ public class UI : MonoBehaviour {
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    
+        
     public static void Log(string message)
     {
         GameObject DebugLogText = GameObject.Find("DebugLogText");

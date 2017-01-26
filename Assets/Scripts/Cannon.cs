@@ -14,9 +14,9 @@ public class Cannon : NetworkBehaviour {
     public float powerScale = 1.0f;
 
     [HideInInspector]
-    public RadialSlider angleSlider;
+    public ArtillerySlider angleSlider;
     [HideInInspector]
-    public VerticalSlider powerSlider;
+    public ArtillerySlider powerSlider;
     [HideInInspector]
     public bool reloading;
 
