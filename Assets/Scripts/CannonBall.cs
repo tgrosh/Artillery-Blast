@@ -7,6 +7,7 @@ using UnityStandardAssets.Cameras;
 public class CannonBall : Explodable
 {
     public float proximitySensorDelay;
+    public AudioClip proximitySound;
 
     float currentProximitySensorDelay;
     bool proximitySensorActive;
@@ -36,6 +37,7 @@ public class CannonBall : Explodable
 
             if (proximityTarget != null)
             {
+                Rpc_ProximityAlert();
                 proximityTarget.Focus(this);
             }
         }
@@ -65,6 +67,12 @@ public class CannonBall : Explodable
             proximityTarget.UnFocus();
         }
         Explode();
+    }
+
+    [ClientRpc]
+    public void Rpc_ProximityAlert()
+    {
+        AudioSource.PlayClipAtPoint(proximitySound, Camera.main.transform.position);
     }
     
     [ClientRpc]

@@ -270,9 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e10afac045235418550266d156bfe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAudioClip: {fileID: 8300000, guid: 395ebd3d6fca1ec40a6b3c7415c1edb7, type: 3}
-  force: 0
-  radius: 0
+  explosionAudioClip: {fileID: 8300000, guid: 3e48e429ad687044a802a299a60f8552, type: 3}
 --- !u!198 &198000010667505060
 ParticleSystem:
   m_ObjectHideFlags: 1

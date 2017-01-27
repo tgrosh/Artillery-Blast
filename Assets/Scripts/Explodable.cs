@@ -3,15 +3,16 @@ using System.Collections;
 using UnityEngine.Networking;
 
 public class Explodable: NetworkBehaviour {
-    public ParticleSystem explosionPrefab;
+    public Explosion explosionPrefab;
     public float explosionForce;
     public float explosionRadius;
         
     public virtual void Explode()
-    {        
-        GameObject explosion = Instantiate(explosionPrefab.gameObject, transform.position, Quaternion.identity);
-        explosion.GetComponent<Explosion>().Explode(explosionForce, explosionRadius);
+    {
+        GameObject obj = Instantiate(explosionPrefab.gameObject, transform.position, Quaternion.identity);
+        Explosion objExplosion = obj.GetComponent<Explosion>();
 
-        Destroy(explosion, explosionPrefab.main.duration);
+        objExplosion.Explode(explosionForce, explosionRadius);
+        Destroy(obj, objExplosion.duration);
     }
 }

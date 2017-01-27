@@ -1114,7 +1114,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7f1f0813ba4c99e499be0fca244f2612, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.32
+  m_Volume: 0.25
   m_Pitch: 0.68
   Loop: 0
   Mute: 0
@@ -1152,7 +1152,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1170,7 +1170,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1232,7 +1232,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1250,7 +1250,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1667,7 +1667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d40cbb4c765b274d8d2f14e3e75f612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
+  explosionPrefab: {fileID: 114192394955724868, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
     type: 2}
   explosionForce: 1000
   explosionRadius: 1
@@ -1743,7 +1743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1a9daec7ba2b742afda640d8a73a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 198000012777718758, guid: 7c3d5e1939233c749b85a60cd3e43a1b,
-    type: 2}
+  explosionPrefab: {fileID: 0}
   explosionForce: 0
   explosionRadius: 0

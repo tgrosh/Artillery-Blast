@@ -5,6 +5,14 @@ using UnityEngine;
 public class Explosion : MonoBehaviour {
     public AudioClip explosionAudioClip;
 
+    public float duration
+    {
+        get
+        {
+            return Mathf.Max(explosionAudioClip.length, GetComponent<ParticleSystem>().main.duration);
+        }
+    }
+
     // Use this for initialization
     void Start () {
 		
@@ -22,7 +30,11 @@ public class Explosion : MonoBehaviour {
 
     public void Explode(float force, float radius)
     {
+        //temporarily restore timescale
+        float origTimeScale = Time.timeScale;
+        Time.timeScale = 1f;
         AudioSource.PlayClipAtPoint(explosionAudioClip, transform.position);
+        Time.timeScale = origTimeScale;
 
         if (force > 0f)
         {

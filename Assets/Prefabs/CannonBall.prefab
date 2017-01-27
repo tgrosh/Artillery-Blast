@@ -129,11 +129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea4a4764ae6c794186d846882730ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 198866730407836070, guid: efcdfc613ffbab24a8e869c4092ffda1,
+  explosionPrefab: {fileID: 114693967125220836, guid: efcdfc613ffbab24a8e869c4092ffda1,
     type: 2}
   explosionForce: 0
   explosionRadius: 0
   proximitySensorDelay: 2
+  proximitySound: {fileID: 8300000, guid: 344ed713dbd04a34a9ad2f61e5f931b2, type: 3}
 --- !u!135 &13525604
 SphereCollider:
   m_ObjectHideFlags: 1

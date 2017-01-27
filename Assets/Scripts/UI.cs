@@ -10,13 +10,10 @@ public class UI : MonoBehaviour {
     public GameObject youWinPrefab;
     public GameObject youLosePrefab;
     public AudioSource uiAudio;
-
-    private GameObject uiPanel;
+    public GameObject uiPanel;
 
     // Use this for initialization
-    void Start () {
-        uiAudio = transform.Find("UIAudioSource").GetComponent<AudioSource>();
-        uiPanel = GameObject.Find("UIPanel");        
+    void Start () {      
     }
 
     public void ShowGameUI(Orientation orientation, float delay)
