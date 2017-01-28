@@ -38,7 +38,7 @@ public class CannonBall : Explodable
             if (proximityTarget != null)
             {
                 Rpc_ProximityAlert();
-                proximityTarget.Focus(this);
+                proximityTarget.Focus();
             }
         }
     }

@@ -15,15 +15,13 @@ public class Wind : NetworkBehaviour {
     public AudioSource windMediumAudio;
     public AudioSource windHighAudio;
     public WindAxis axis;
-    WindVane windVane;
 
     [SyncVar]
     int magnitude;
     List<CannonBall> cannonBallsAffected = new List<CannonBall>();
-    
+        
     public override void OnStartServer()
-    {
-        windVane = FindObjectOfType<WindVane>();
+    {        
         magnitude = UnityEngine.Random.Range(minSpeed, maxSpeed);
 
         if (UnityEngine.Random.value > .5f)
@@ -36,6 +34,8 @@ public class Wind : NetworkBehaviour {
 
     public override void OnStartClient()
     {
+        WindVane windVane = FindObjectOfType<WindVane>();
+
         if (Math.Abs(magnitude) > highSpeedThreshold)
         {
             windVane.Show(magnitude, WindSpeed.High);
@@ -54,9 +54,13 @@ public class Wind : NetworkBehaviour {
 
         base.OnStartClient();
     }
-
-    [Server]
+    
 	void Update () {
+        if (!isServer)
+        {
+            return;
+        }
+
         foreach (CannonBall cannonBall in GameObject.FindObjectsOfType<CannonBall>())
         {
             if (!cannonBallsAffected.Contains(cannonBall))

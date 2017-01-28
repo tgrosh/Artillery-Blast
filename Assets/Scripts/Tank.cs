@@ -17,6 +17,7 @@ public class Tank : Explodable {
     public float deltaTimeRatio = .02f;
     public float clearFocusDelay = 2f;
     public TankCam cam;
+    public GameObject tankFire;
 
     public static event TankReadyEventHandler OnTankReady;
     public delegate void TankReadyEventHandler(Tank tank);    
@@ -54,21 +55,31 @@ public class Tank : Explodable {
             Tank.OnTankReady(this);
         }
     }
-        
+
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+    }
+
     void FixedUpdate()
     {
     }
 
     [Server]
-    public void Focus(CannonBall ball)
+    public void Focus()
     {
         Rpc_Focus();
     }
-
+    
     [ClientRpc]
     public void Rpc_Focus()
     {
         cam.FocusOn(transform, 10, slowMoTimeScale);
+    }
+    
+    public void Zoom()
+    {
+        cam.FocusOn(transform, 20, 1f);
     }
 
     [Server]
@@ -128,7 +139,8 @@ public class Tank : Explodable {
         base.Explode();
         cannon.angleSlider = null;
         cam.gameObject.GetComponent<CameraShaker>().Shake();
-
+        Instantiate(tankFire, transform.position, Quaternion.identity);
+        
         StartCoroutine(EndGame());
     }
 
@@ -136,6 +148,8 @@ public class Tank : Explodable {
     IEnumerator EndGame()
     {
         yield return new WaitForSecondsRealtime(3f);
+
+        Tank.localPlayer.Zoom();
         if (isLocalPlayer)
         {
             GameObject.FindObjectOfType<UI>().YouLose();
