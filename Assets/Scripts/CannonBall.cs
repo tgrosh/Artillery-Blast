@@ -72,7 +72,7 @@ public class CannonBall : Explodable
     [ClientRpc]
     public void Rpc_ProximityAlert()
     {
-        AudioSource.PlayClipAtPoint(proximitySound, Camera.main.transform.position);
+        //AudioSource.PlayClipAtPoint(proximitySound, Camera.main.transform.position);
     }
     
     [ClientRpc]

@@ -26,15 +26,15 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.905383 ms
+UnloadTime: 0.751984 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3a40 -> priority: 1 
-  Thread -> id: 3d18 -> priority: 1 
+  Thread -> id: 1204 -> priority: 1 
+  Thread -> id: 1bac -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.545775 ms
+UnloadTime: 5.726492 ms
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2498.
-Total: 1.078595 ms (FindLiveObjects: 0.151597 ms CreateObjectMapping: 0.077149 ms MarkObjects: 0.815325 ms  DeleteObjects: 0.033621 ms)
+Total: 1.131729 ms (FindLiveObjects: 0.167508 ms CreateObjectMapping: 0.072947 ms MarkObjects: 0.857352 ms  DeleteObjects: 0.033321 ms)
 
 MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
  
@@ -53,240 +53,31 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.644215 ms
+UnloadTime: 0.632507 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8764.
-Total: 3.527574 ms (FindLiveObjects: 0.451491 ms CreateObjectMapping: 0.102366 ms MarkObjects: 1.353272 ms  DeleteObjects: 1.620144 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8775.
+Total: 3.578907 ms (FindLiveObjects: 0.490216 ms CreateObjectMapping: 0.102966 ms MarkObjects: 1.374586 ms  DeleteObjects: 1.610538 ms)
 
 Spawn scene object not found for 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Log: connection {1} has been disconnected by timeout; address {::ffff:52.86.7.189:9999}
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ClientDisconnected due to error: Timeout
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.867804 ms
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2569.
+Total: 1.873207 ms (FindLiveObjects: 0.111972 ms CreateObjectMapping: 0.058237 ms MarkObjects: 1.143737 ms  DeleteObjects: 0.558059 ms)
 
