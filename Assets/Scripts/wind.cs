@@ -66,14 +66,23 @@ public class Wind : NetworkBehaviour {
             if (!cannonBallsAffected.Contains(cannonBall))
             {
                 cannonBallsAffected.Add(cannonBall);
-                Vector3 windDirection;
+                Vector3 windDirection = Vector3.zero;
+
                 if (axis == WindAxis.x)
                 {
                     windDirection = Vector3.right;
-                } else
+                } else if (axis == WindAxis.z)
                 {
                     windDirection = Vector3.forward;
+                } else if (axis == WindAxis.xinverse)
+                {
+                    windDirection = Vector3.left;
                 }
+                else if (axis == WindAxis.zinverse)
+                {
+                    windDirection = Vector3.back;
+                }
+
                 cannonBall.gameObject.GetComponent<Rigidbody>().AddForce(windDirection * magnitude * windScale);
             }
         }
@@ -83,7 +92,9 @@ public class Wind : NetworkBehaviour {
 public enum WindAxis
 {
     x,
-    z
+    z,
+    xinverse,
+    zinverse
 }
 
 public enum WindSpeed

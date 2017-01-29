@@ -3158,6 +3158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerText: {fileID: 114314805266569618}
   player: {fileID: 0}
+  canvasGroup: {fileID: 0}
 --- !u!114 &114179448390279094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3171,6 +3172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerText: {fileID: 114390708936180988}
   player: {fileID: 0}
+  canvasGroup: {fileID: 0}
 --- !u!114 &114181580316246994
 MonoBehaviour:
   m_ObjectHideFlags: 1

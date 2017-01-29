@@ -12,7 +12,7 @@ public class LobbyMan : LobbyManager {
         if (sceneName == playScene)
         {
             Orientation[] orientations = FindObjectOfType<GameManager>().orientations;
-            int orientationIndex = Random.Range(0, orientations.Length - 1);
+            int orientationIndex = Random.Range(0, orientations.Length);
 
             Orientation selectedOrientation = orientations[orientationIndex];
             GameObject obj = Instantiate(selectedOrientation.gameObject);
