@@ -19,22 +19,26 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.025 seconds
+- Completed reload, in  0.042 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.751984 ms
+UnloadTime: 0.809922 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1204 -> priority: 1 
-  Thread -> id: 1bac -> priority: 1 
+  Thread -> id: 2688 -> priority: 1 
+  Thread -> id: 21b4 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.726492 ms
+UnloadTime: 6.121547 ms
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2498.
-Total: 1.131729 ms (FindLiveObjects: 0.167508 ms CreateObjectMapping: 0.072947 ms MarkObjects: 0.857352 ms  DeleteObjects: 0.033321 ms)
+Total: 1.056681 ms (FindLiveObjects: 0.148295 ms CreateObjectMapping: 0.075048 ms MarkObjects: 0.799415 ms  DeleteObjects: 0.032721 ms)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
  
@@ -53,31 +57,60 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.632507 ms
+UnloadTime: 0.793711 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8775.
-Total: 3.578907 ms (FindLiveObjects: 0.490216 ms CreateObjectMapping: 0.102966 ms MarkObjects: 1.374586 ms  DeleteObjects: 1.610538 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8797.
+Total: 3.633843 ms (FindLiveObjects: 0.458095 ms CreateObjectMapping: 0.104167 ms MarkObjects: 1.429221 ms  DeleteObjects: 1.641458 ms)
 
 Spawn scene object not found for 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:52.86.7.189:9999}
-MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-ClientDisconnected due to error: Timeout
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.867804 ms
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2569.
-Total: 1.873207 ms (FindLiveObjects: 0.111972 ms CreateObjectMapping: 0.058237 ms MarkObjects: 1.143737 ms  DeleteObjects: 0.558059 ms)
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

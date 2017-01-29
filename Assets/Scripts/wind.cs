@@ -17,44 +17,52 @@ public class Wind : NetworkBehaviour {
     public WindAxis axis;
 
     [SyncVar]
-    int magnitude;
+    int magnitude = 0;
     List<CannonBall> cannonBallsAffected = new List<CannonBall>();
         
-    public override void OnStartServer()
-    {        
-        magnitude = UnityEngine.Random.Range(minSpeed, maxSpeed);
-
-        if (UnityEngine.Random.value > .5f)
+    void Start()
+    {
+        if (isServer)
         {
-            magnitude *= -1;
-        }
+            magnitude = UnityEngine.Random.Range(minSpeed, maxSpeed);
 
-        base.OnStartServer();
+            if (UnityEngine.Random.value > .5f)
+            {
+                magnitude *= -1;
+            }
+
+            Rpc_ShowWindVane(magnitude);
+        }
     }
 
-    public override void OnStartClient()
+    [ClientRpc]
+    void Rpc_ShowWindVane(int magnitude)
     {
         WindVane windVane = FindObjectOfType<WindVane>();
 
         if (Math.Abs(magnitude) > highSpeedThreshold)
         {
             windVane.Show(magnitude, WindSpeed.High);
+            windMediumAudio.Stop();
+            windLowAudio.Stop();
             windHighAudio.Play();
         }
         else if (Math.Abs(magnitude) > mediumSpeedThreshold)
         {
             windVane.Show(magnitude, WindSpeed.Medium);
+            windHighAudio.Stop();
+            windLowAudio.Stop();
             windMediumAudio.Play();
         }
         else
         {
             windVane.Show(magnitude, WindSpeed.Low);
+            windHighAudio.Stop();
+            windMediumAudio.Stop();
             windLowAudio.Play();
         }
-
-        base.OnStartClient();
     }
-    
+        
 	void Update () {
         if (!isServer)
         {
