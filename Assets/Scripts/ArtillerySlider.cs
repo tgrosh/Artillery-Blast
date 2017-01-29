@@ -102,8 +102,12 @@ public class ArtillerySlider: MonoBehaviour, IPointerEnterHandler, IPointerExitH
                     if (value != recentValue)
                     {
                         //value has changed
-                        if (audioClip != null && !uiAudio.isPlaying)
+                        if (audioClip != null)
                         {
+                            if (uiAudio.isPlaying)
+                            {
+                                uiAudio.Stop();
+                            }
                             uiAudio.PlayOneShot(audioClip);
                         }
                     }
