@@ -19,32 +19,25 @@ Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEn
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.024 seconds
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Artillery Blast\ArtilleryBlast_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+desktop: 1600x900 60Hz; virtual: 3520x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 0.809922 ms
+UnloadTime: 0.739678 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2688 -> priority: 1 
-  Thread -> id: 21b4 -> priority: 1 
+  Thread -> id: ffc -> priority: 1 
+  Thread -> id: 2848 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.121547 ms
+UnloadTime: 159.198349 ms
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2498.
-Total: 1.056681 ms (FindLiveObjects: 0.148295 ms CreateObjectMapping: 0.075048 ms MarkObjects: 0.799415 ms  DeleteObjects: 0.032721 ms)
+Total: 1.181864 ms (FindLiveObjects: 0.185820 ms CreateObjectMapping: 0.065142 ms MarkObjects: 0.890976 ms  DeleteObjects: 0.039025 ms)
 
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -57,60 +50,397 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.793711 ms
+UnloadTime: 0.685343 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8797.
-Total: 3.633843 ms (FindLiveObjects: 0.458095 ms CreateObjectMapping: 0.104167 ms MarkObjects: 1.429221 ms  DeleteObjects: 1.641458 ms)
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Spawn scene object not found for 2
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8969.
+Total: 3.643756 ms (FindLiveObjects: 0.432279 ms CreateObjectMapping: 0.095161 ms MarkObjects: 1.454440 ms  DeleteObjects: 1.661274 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.158095 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.397296 ms (FindLiveObjects: 0.123980 ms CreateObjectMapping: 0.057036 ms MarkObjects: 1.199875 ms  DeleteObjects: 2.016103 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.749884 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.744921 ms (FindLiveObjects: 0.458996 ms CreateObjectMapping: 0.098763 ms MarkObjects: 1.535793 ms  DeleteObjects: 1.651067 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.994489 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.143332 ms (FindLiveObjects: 0.119177 ms CreateObjectMapping: 0.060339 ms MarkObjects: 1.111018 ms  DeleteObjects: 1.852197 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.518735 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.694188 ms (FindLiveObjects: 0.459597 ms CreateObjectMapping: 0.101465 ms MarkObjects: 1.508775 ms  DeleteObjects: 1.623449 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.054528 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.387990 ms (FindLiveObjects: 0.117075 ms CreateObjectMapping: 0.058537 ms MarkObjects: 1.131731 ms  DeleteObjects: 2.079744 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.510329 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.716403 ms (FindLiveObjects: 0.441885 ms CreateObjectMapping: 0.102366 ms MarkObjects: 1.497668 ms  DeleteObjects: 1.673281 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.457989 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.345963 ms (FindLiveObjects: 0.111071 ms CreateObjectMapping: 0.064241 ms MarkObjects: 1.104113 ms  DeleteObjects: 2.066236 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.524739 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8969.
+Total: 3.620040 ms (FindLiveObjects: 0.431979 ms CreateObjectMapping: 0.095761 ms MarkObjects: 1.493465 ms  DeleteObjects: 1.598533 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.188415 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.378684 ms (FindLiveObjects: 0.111672 ms CreateObjectMapping: 0.060939 ms MarkObjects: 1.110718 ms  DeleteObjects: 2.095054 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.546953 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 4.105754 ms (FindLiveObjects: 0.477308 ms CreateObjectMapping: 0.105067 ms MarkObjects: 1.817074 ms  DeleteObjects: 1.706003 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.540842 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.571709 ms (FindLiveObjects: 0.115574 ms CreateObjectMapping: 0.058237 ms MarkObjects: 1.356577 ms  DeleteObjects: 2.040719 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.577873 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.874305 ms (FindLiveObjects: 0.452692 ms CreateObjectMapping: 0.106869 ms MarkObjects: 1.618646 ms  DeleteObjects: 1.695796 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.061733 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.372080 ms (FindLiveObjects: 0.105067 ms CreateObjectMapping: 0.065142 ms MarkObjects: 1.124827 ms  DeleteObjects: 2.076442 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.501023 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SpawnPosition.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 8969.
+Total: 3.714902 ms (FindLiveObjects: 0.445788 ms CreateObjectMapping: 0.104767 ms MarkObjects: 1.551703 ms  DeleteObjects: 1.612342 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UI+<FadeIn>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+<ShowGameUIDelayed>c__Iterator0:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.491010 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.479850 ms (FindLiveObjects: 0.105368 ms CreateObjectMapping: 0.062140 ms MarkObjects: 1.291134 ms  DeleteObjects: 2.020606 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.567066 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.782445 ms (FindLiveObjects: 0.449690 ms CreateObjectMapping: 0.099064 ms MarkObjects: 1.527987 ms  DeleteObjects: 1.705402 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.271868 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.409904 ms (FindLiveObjects: 0.117676 ms CreateObjectMapping: 0.062740 ms MarkObjects: 1.178261 ms  DeleteObjects: 2.050325 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.500423 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.785747 ms (FindLiveObjects: 0.443987 ms CreateObjectMapping: 0.099064 ms MarkObjects: 1.587426 ms  DeleteObjects: 1.654369 ms)
+
+HandleChildTransform no gameObject
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.292882 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.538988 ms (FindLiveObjects: 0.118276 ms CreateObjectMapping: 0.058537 ms MarkObjects: 1.270721 ms  DeleteObjects: 2.090851 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.553858 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Tank.Cmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Tank.CallCmd_SetPosition () [0x00000] in <filename unknown>:0 
+  at Orientation.TankSetup () [0x00000] in <filename unknown>:0 
+  at Orientation.Tank_OnTankReady (.Tank tank) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at (wrapper delegate-invoke) Tank/TankReadyEventHandler:invoke_void__this___Tank (Tank)
+  at Tank.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 9143.
+Total: 3.931342 ms (FindLiveObjects: 0.487515 ms CreateObjectMapping: 0.103266 ms MarkObjects: 1.666677 ms  DeleteObjects: 1.673281 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.307291 ms
+
+Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 3.529682 ms (FindLiveObjects: 0.107469 ms CreateObjectMapping: 0.057937 ms MarkObjects: 1.206480 ms  DeleteObjects: 2.157194 ms)
+
+MatchMakingClient Destroy :https://mm.unet.unity3d.com/json/reply/DestroyMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.537647 ms
 
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Server] function 'System.Void CannonBall::OnTriggerEnter(UnityEngine.Collider)' called on client
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2543.
+Total: 1.231996 ms (FindLiveObjects: 0.117075 ms CreateObjectMapping: 0.062440 ms MarkObjects: 1.045876 ms  DeleteObjects: 0.005703 ms)
 

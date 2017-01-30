@@ -11,6 +11,7 @@ public class UI : MonoBehaviour {
     public GameObject youLosePrefab;
     public AudioSource uiAudio;
     public GameObject uiPanel;
+    public GameObject endGameMenu;
 
     // Use this for initialization
     void Start () {      
@@ -26,7 +27,7 @@ public class UI : MonoBehaviour {
         SceneManager.LoadScene(level);
     }
 
-    public void EndGame()
+    public void ReturnToLobby()
     {
         Tank.localPlayer.Cmd_ReturnToLobby();
     }
@@ -38,12 +39,14 @@ public class UI : MonoBehaviour {
 
     public void YouWin()
     {
-        youWinPrefab.SetActive(true);
+        endGameMenu.GetComponent<Animator>().Play("EndGameWinner");
+        uiPanel.GetComponent<Animator>().Play("UIPanelExit");
     }
 
     public void YouLose()
     {
-        youLosePrefab.SetActive(true);
+        endGameMenu.GetComponent<Animator>().Play("EndGameDefeated");
+        uiPanel.GetComponent<Animator>().Play("UIPanelExit");
     }
 
     public void Fire()
