@@ -140,7 +140,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f74423bf4791ed24bbacda525bdee25c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cf3bb98bd26e22541b905558778b5ed8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -220,7 +220,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b2992343547d9a94aa2d72a079366b1a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7179fab35c076754293bc00b8643772b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -300,9 +300,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f74423bf4791ed24bbacda525bdee25c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7179fab35c076754293bc00b8643772b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -417,8 +417,14 @@ MonoBehaviour:
   minSpeed: 3
   maxSpeed: 35
   windScale: 20
-  mediumSpeedThreshold: 10
-  highSpeedThreshold: 50
+  gustIntervalMin: 1
+  gustIntervalMax: 3
+  gustDurationMin: 1
+  gustDurationMax: 7
+  gustScaleMin: 1.1
+  gustScaleMax: 1.5
+  mediumSpeedThreshold: 12
+  highSpeedThreshold: 35
   windLowAudio: {fileID: 82766463982961672}
   windMediumAudio: {fileID: 82948183383904852}
   windHighAudio: {fileID: 82004522428800470}

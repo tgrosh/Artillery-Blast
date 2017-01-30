@@ -9,8 +9,7 @@ public class WindVane : MonoBehaviour
     public Color lowSpeedColor;
     public Color mediumSpeedColor;
     public Color highSpeedColor;
-
-    int magnitude;
+    
     Image windSpeedImage;
     Text windSpeedText;
 
@@ -21,11 +20,11 @@ public class WindVane : MonoBehaviour
 
     }
 	
-    public void Show(int magnitude, WindSpeed windSpeed)
+    public void Show(int magnitude, WindSpeed windSpeed, WindAxis axis)
     {
         if (magnitude < 0)
         {
-            windSpeedImage.transform.Rotate(Vector3.up, 180);
+            windSpeedImage.transform.rotation = Quaternion.identity;
         }
 
         if (windSpeed == WindSpeed.High)
