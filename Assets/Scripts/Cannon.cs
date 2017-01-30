@@ -10,7 +10,6 @@ public class Cannon : NetworkBehaviour {
     public AudioSource cannonReloadSound;
     public Transform projectileSpawner;
     public float reloadTime;
-    public Image reloadImage;
     public float powerScale = 1.0f;
 
     [HideInInspector]
@@ -24,7 +23,6 @@ public class Cannon : NetworkBehaviour {
 
     // Use this for initialization
     void Start () {
-        reloadImage.transform.parent.parent.gameObject.SetActive(false);
     }
 	
 	void Update () {        
@@ -35,16 +33,13 @@ public class Cannon : NetworkBehaviour {
 
         if (reloading)
         {
-            reloadImage.transform.parent.parent.gameObject.SetActive(true);
             currentLoadTime += Time.deltaTime;
-            reloadImage.fillAmount = currentLoadTime / reloadTime;
 
             if (currentLoadTime >= reloadTime)
             {
                 cannonReloadSound.Stop();
                 reloading = false;
                 currentLoadTime = 0f;
-                reloadImage.transform.parent.parent.gameObject.SetActive(false);
             }
         }
 	}

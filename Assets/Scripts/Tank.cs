@@ -64,35 +64,22 @@ public class Tank : Explodable {
     void FixedUpdate()
     {
     }
-
+        
+    public void Zoom()
+    {
+        cam.FocusOn(transform, 20, 1f);
+    }
+        
     [Server]
     public void Focus()
     {
         Rpc_Focus();
     }
-    
+
     [ClientRpc]
     public void Rpc_Focus()
     {
         cam.FocusOn(transform, 10, slowMoTimeScale);
-    }
-    
-    public void Zoom()
-    {
-        cam.FocusOn(transform, 20, 1f);
-    }
-
-    [Server]
-    public void UnFocus()
-    {
-        StartCoroutine(DelayedUnFocus());        
-    }
-
-    IEnumerator DelayedUnFocus()
-    {
-        Rpc_ResetFocus();
-        yield return new WaitForSecondsRealtime(clearFocusDelay);
-        Rpc_UnFocus();
     }
 
     [ClientRpc]
@@ -101,17 +88,23 @@ public class Tank : Explodable {
         cam.ResetFocus();
     }
 
+    [Server]
+    public void UnFocus()
+    {
+        StartCoroutine(DelayedUnFocus());
+    }
+
     [ClientRpc]
     public void Rpc_UnFocus()
     {
         cam.ClearFocus();
     }
 
-    [Command]
-    public void Cmd_SetPlayerInfo(string name, Color color)
+    IEnumerator DelayedUnFocus()
     {
-        this.playerName = name;
-        this.playerColor = color;
+        Rpc_ResetFocus();
+        yield return new WaitForSecondsRealtime(clearFocusDelay);
+        Rpc_UnFocus();
     }
     
     [Command] //server
