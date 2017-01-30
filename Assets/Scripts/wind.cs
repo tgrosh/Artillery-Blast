@@ -54,26 +54,27 @@ public class Wind : NetworkBehaviour {
     {
         WindVane windVane = FindObjectOfType<WindVane>();
 
+        if (!windLowAudio.isPlaying)
+        {
+            StartCoroutine(fadeIn(windLowAudio, .5f, .5f));
+        }
+
         if (System.Math.Abs(magnitude) > highSpeedThreshold)
         {
             windVane.Show(magnitude, WindSpeed.High, axis);
-            windMediumAudio.Stop();
-            windLowAudio.Stop();
-            windHighAudio.Play();
+            StartCoroutine(fadeIn(windHighAudio, .5f, .5f));
         }
         else if (System.Math.Abs(magnitude) > mediumSpeedThreshold)
         {
             windVane.Show(magnitude, WindSpeed.Medium, axis);
-            windHighAudio.Stop();
-            windLowAudio.Stop();
-            windMediumAudio.Play();
+            StartCoroutine(fadeOut(windHighAudio, .5f));
+            StartCoroutine(fadeIn(windMediumAudio, .5f, .5f));
         }
         else
         {
             windVane.Show(magnitude, WindSpeed.Low, axis);
-            windHighAudio.Stop();
-            windMediumAudio.Stop();
-            windLowAudio.Play();
+            StartCoroutine(fadeOut(windHighAudio, .5f));
+            StartCoroutine(fadeOut(windMediumAudio, .5f));            
         }
     }
         
@@ -152,6 +153,34 @@ public class Wind : NetworkBehaviour {
         result.duration = Random.Range(gustDurationMin, gustDurationMax);
 
         return result;
+    }
+
+    IEnumerator fadeIn(AudioSource audio, float fadeDuration, float fadeTo)
+    {
+        audio.volume = 0.0f;
+        audio.Play();
+
+        float t = 0.0f;
+        while (t < fadeTo)
+        {
+            t += Time.deltaTime;
+            audio.volume = t;
+            yield return new WaitForSeconds(0);
+        }
+    }
+
+    IEnumerator fadeOut(AudioSource audio, float fadeDuration)
+    {
+        float t = audio.volume;
+        while (t > 0.0f)
+        {
+            t -= Time.deltaTime;
+            audio.volume = t;
+            yield return new WaitForSeconds(0);
+        }
+
+        audio.volume = 0.0f;
+        audio.Stop();
     }
 }
 
