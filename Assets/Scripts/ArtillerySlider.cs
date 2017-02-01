@@ -75,12 +75,15 @@ public class ArtillerySlider: MonoBehaviour, IPointerEnterHandler, IPointerExitH
                         // local pos is the mouse position.
                         float angle = (Mathf.Atan2(-localPos.y, localPos.x) * 180f / Mathf.PI + 180f) / 360f; //number between 0 and 1
 
-                        if (minValue != maxValue)
+                        if (angle * 360f < maxValue && angle > 0)
                         {
-                            angle = Mathf.Clamp(angle * 360f, minValue, maxValue) / 360f;
-                        }
+                            if (minValue != maxValue)
+                            {
+                                angle = Mathf.Clamp(angle * 360f, minValue, maxValue) / 360f;
+                            }
 
-                        value = ((int)(angle * 360f));
+                            value = ((int)(angle * 360f));
+                        }
                     } else
                     {
                         value = (int)(minValue + (((localPos.y / (rect.rect.height)) * maxValue) - minValue));

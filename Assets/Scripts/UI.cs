@@ -78,8 +78,14 @@ public class UI : MonoBehaviour {
     IEnumerator WaitForPlayers(Orientation orientation)
     {
         int readyTankCount = GetReadyTankCount();
+        int neededTanks = 2;
 
-        while (readyTankCount < 2)
+        if (Application.isEditor)
+        {
+            neededTanks = 1;
+        }
+
+        while (readyTankCount < neededTanks)
         {
             waitingForPlayers.SetActive(true);            
             yield return null;
