@@ -417,12 +417,12 @@ MonoBehaviour:
   minSpeed: 3
   maxSpeed: 35
   windScale: 20
-  gustIntervalMin: 1
-  gustIntervalMax: 3
+  gustIntervalMin: 3
+  gustIntervalMax: 7
   gustDurationMin: 1
   gustDurationMax: 7
-  gustScaleMin: 1.1
-  gustScaleMax: 1.5
+  gustScaleMin: 1.05
+  gustScaleMax: 1.25
   mediumSpeedThreshold: 12
   highSpeedThreshold: 35
   windLowAudio: {fileID: 82766463982961672}
