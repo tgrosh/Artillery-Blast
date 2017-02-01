@@ -31,7 +31,7 @@ public class CannonBall : Explodable
     [Server]
     void OnTriggerEnter(Collider col)
     {
-        if (proximitySensorActive && proximityTarget == null)
+        if (!GameManager.instance.isGameOver && proximitySensorActive && proximityTarget == null)
         {
             proximityTarget = col.transform.root.GetComponent<Tank>();
 

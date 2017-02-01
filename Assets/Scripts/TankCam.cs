@@ -38,8 +38,9 @@ public class TankCam : FreeLookCam {
 
     // Update is called once per frame
     new void Update () {
-        if (this.userLookEnabled && this.focusTarget == null)
+        if (this.userLookEnabled)
         {
+            ClearFocus();
             base.Update();
         } else
         {

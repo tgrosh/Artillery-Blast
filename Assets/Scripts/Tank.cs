@@ -133,13 +133,18 @@ public class Tank : Explodable {
         cannon.angleSlider = null;
         cam.gameObject.GetComponent<CameraShaker>().Shake();
         Instantiate(tankFire, transform.position, Quaternion.identity);
-        
-        StartCoroutine(EndGame());
+
+        if (!GameManager.instance.isGameOver)
+        {
+            StartCoroutine(EndGame());
+        }
     }
 
     [Client]
     IEnumerator EndGame()
     {
+        GameManager.instance.isGameOver = true;
+                
         yield return new WaitForSecondsRealtime(3f);
 
         Tank.localPlayer.Zoom();
