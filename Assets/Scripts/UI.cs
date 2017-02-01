@@ -12,6 +12,7 @@ public class UI : MonoBehaviour {
     public AudioSource uiAudio;
     public GameObject uiPanel;
     public GameObject endGameMenu;
+    public GameObject waitingForPlayers;
 
     // Use this for initialization
     void Start () {      
@@ -69,12 +70,46 @@ public class UI : MonoBehaviour {
     {
         yield return new WaitForSeconds(delay);
 
+        Tank.localPlayer.Cmd_SetClientReady();
+
+        yield return WaitForPlayers(orientation);
+    }
+
+    IEnumerator WaitForPlayers(Orientation orientation)
+    {
+        int readyTankCount = GetReadyTankCount();
+
+        while (readyTankCount < 2)
+        {
+            waitingForPlayers.SetActive(true);            
+            yield return null;
+            readyTankCount = GetReadyTankCount();
+        }
+
+        //show GameUI
         if (uiPanel != null)
         {
+            waitingForPlayers.SetActive(false);
             uiPanel.GetComponent<Animator>().enabled = true;
             StartCoroutine(FadeIn(orientation.leftSpawn.canvasGroup, 2f));
             StartCoroutine(FadeIn(orientation.rightSpawn.canvasGroup, 2f));
         }
+    }
+
+    int GetReadyTankCount()
+    {
+        Tank[] tanks = FindObjectsOfType<Tank>();
+
+        int result = 0;
+        foreach (Tank tank in tanks)
+        {
+            if (tank.isClientReady)
+            {
+                result++;
+            }
+        }
+
+        return result;
     }
 
     private IEnumerator FadeIn(CanvasGroup canvasGroup, float fadeSpeed)

@@ -18,6 +18,8 @@ public class Tank : Explodable {
     public float clearFocusDelay = 2f;
     public TankCam cam;
     public GameObject tankFire;
+    [SyncVar]
+    public bool isClientReady;
 
     public static event TankReadyEventHandler OnTankReady;
     public delegate void TankReadyEventHandler(Tank tank);    
@@ -105,6 +107,12 @@ public class Tank : Explodable {
         Rpc_ResetFocus();
         yield return new WaitForSecondsRealtime(clearFocusDelay);
         Rpc_UnFocus();
+    }
+
+    [Command]
+    public void Cmd_SetClientReady()
+    {
+        isClientReady = true;
     }
     
     [Command] //server
