@@ -1340,6 +1340,9 @@ MonoBehaviour:
   youWinPrefab: {fileID: 0}
   youLosePrefab: {fileID: 0}
   uiAudio: {fileID: 0}
+  uiPanel: {fileID: 0}
+  endGameMenu: {fileID: 0}
+  waitingForPlayers: {fileID: 0}
 --- !u!1 &1044142322
 GameObject:
   m_ObjectHideFlags: 0

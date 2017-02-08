@@ -18,6 +18,14 @@ public class UI : MonoBehaviour {
     void Start () {      
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Fire();
+        }
+    }
+
     public void ShowGameUI(Orientation orientation, float delay)
     {
         StartCoroutine(ShowGameUIDelayed(orientation, delay));
