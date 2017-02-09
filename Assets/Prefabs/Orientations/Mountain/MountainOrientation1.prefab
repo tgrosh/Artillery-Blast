@@ -3304,7 +3304,7 @@ MonoBehaviour:
   m_VerticalAutoReturn: 0
   panRange: 55
   focusTarget: {fileID: 0}
-  focusSpeed: 0.05
+  focusSpeed: 0.25
 --- !u!114 &114538497869917480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3514,8 +3514,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f29dd688b8353a64d97747b59bfe1fda, type: 3}
-    m_FontSize: 36
+    m_Font: {fileID: 12800000, guid: 5c7ec3e5f14deaf4a9cc73006029a8c1, type: 3}
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
@@ -3612,8 +3612,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f29dd688b8353a64d97747b59bfe1fda, type: 3}
-    m_FontSize: 36
+    m_Font: {fileID: 12800000, guid: 5c7ec3e5f14deaf4a9cc73006029a8c1, type: 3}
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 3
