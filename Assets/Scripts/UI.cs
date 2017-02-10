@@ -14,8 +14,15 @@ public class UI : MonoBehaviour {
     public GameObject endGameMenu;
     public GameObject waitingForPlayers;
 
+    CooldownButton moveLeftButton;
+    CooldownButton moveRightButton;
+    CooldownButton fireButton;
+
     // Use this for initialization
-    void Start () {      
+    void Start () {
+        fireButton = GameObject.Find("FireButton").GetComponent<CooldownButton>();
+        moveLeftButton = GameObject.Find("MoveLeftButton").GetComponent<CooldownButton>();
+        moveRightButton = GameObject.Find("MoveRightButton").GetComponent<CooldownButton>();
     }
 
     void Update()
@@ -60,21 +67,36 @@ public class UI : MonoBehaviour {
 
     public void Fire()
     {
-        FireButton fireButton = FindObjectOfType<FireButton>();
-        Tank.localPlayer.Cmd_Fire(Tank.localPlayer.cannon.powerSlider.value);
-        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.cannon.reloadTime);
+        if (!fireButton.isOnCooldown)
+        {
+            Tank.localPlayer.Cmd_Fire(Tank.localPlayer.cannon.powerSlider.value);
+            TriggerButtonCooldowns(Tank.localPlayer.cannon.reloadTime);
+        }
     }
 
     public void MoveRight()
     {
-        Tank.localPlayer.Cmd_MoveRight();
-        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.movementCooldownTime);
+        if (!moveRightButton.isOnCooldown)
+        {
+            Tank.localPlayer.Cmd_MoveRight();
+            TriggerButtonCooldowns(Tank.localPlayer.movementCooldownTime);
+        }
     }
 
     public void MoveLeft()
     {
-        Tank.localPlayer.Cmd_MoveLeft();
-        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.movementCooldownTime);
+        if (!moveLeftButton.isOnCooldown)
+        {
+            Tank.localPlayer.Cmd_MoveLeft();
+            TriggerButtonCooldowns(Tank.localPlayer.movementCooldownTime);
+        }
+    }
+
+    public void TriggerButtonCooldowns(float cooldownTime)
+    {
+        fireButton.Cooldown(cooldownTime);
+        moveRightButton.Cooldown(cooldownTime);
+        moveLeftButton.Cooldown(cooldownTime);
     }
             
     public static void Log(string message)

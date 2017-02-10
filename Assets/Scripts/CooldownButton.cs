@@ -1,21 +1,36 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FireButton : MonoBehaviour {
-    public Button button;
-    public Image buttonImage;
+public class CooldownButton : MonoBehaviour {
     public Image progressFill;
-
+    
+    Button button;
+    Image buttonImage;
     float cooldownTime;
     public bool isOnCooldown;
-    float currentReloadTime;
+    float currentCooldownTime;
     ColorBlock origButtonColors;
 
+    public float CurrentCooldownTime
+    {
+        get
+        {
+            return currentCooldownTime;
+        }
+
+        set
+        {
+            currentCooldownTime = value;
+        }
+    }
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        button = GetComponent<Button>();
+        buttonImage = GetComponent<Image>();
         origButtonColors = button.colors;
     }
 
@@ -29,24 +44,25 @@ public class FireButton : MonoBehaviour {
             this.cooldownTime = cooldownTime;
         }
     }
-        
+
     // Update is called once per frame
-    void Update () {
-		if (isOnCooldown && cooldownTime > 0)
+    void Update()
+    {
+        if (isOnCooldown && cooldownTime > 0)
         {
-            if (currentReloadTime > cooldownTime)
+            if (currentCooldownTime >= cooldownTime)
             {
                 progressFill.gameObject.SetActive(false);
                 button.interactable = true;
-                currentReloadTime = 0;
-                isOnCooldown = false;              
-            } else
+                currentCooldownTime = 0;
+                isOnCooldown = false;
+            }
+            else
             {
-                currentReloadTime += Time.deltaTime;
-                progressFill.fillAmount = currentReloadTime / cooldownTime;
+                currentCooldownTime += Time.deltaTime;
+                progressFill.fillAmount = currentCooldownTime / cooldownTime;
                 progressFill.color = Color.Lerp(origButtonColors.disabledColor, origButtonColors.normalColor, progressFill.fillAmount);
             }
         }
-	}
-    
+    }
 }
