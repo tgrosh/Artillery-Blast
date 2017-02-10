@@ -1680,7 +1680,9 @@ MonoBehaviour:
   clearFocusDelay: 1.5
   cam: {fileID: 0}
   tankFire: {fileID: 1069379384950262, guid: 241146f86dada0a4bb2a3675582fbe36, type: 2}
+  spawnSide: 0
   isClientReady: 0
+  movementCooldownTime: 2
 --- !u!114 &114745356578338024
 MonoBehaviour:
   m_ObjectHideFlags: 1

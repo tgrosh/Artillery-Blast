@@ -21,6 +21,7 @@ public class Tank : Explodable {
     public SpawnSide spawnSide;
     [SyncVar]
     public bool isClientReady;
+    public float movementCooldownTime;
 
     public static event TankReadyEventHandler OnTankReady;
     public delegate void TankReadyEventHandler(Tank tank);    
@@ -88,7 +89,7 @@ public class Tank : Explodable {
     {
         StartCoroutine(DelayedUnFocus());
     }
-
+    
     [Command]
     public void Cmd_SetClientReady()
     {
