@@ -102,11 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  minValue: 0
+  minValue: 10
   maxValue: 100
   increment: 5
   sliderType: 1
-  audioClip: {fileID: 8300000, guid: 16078119a3729394284e544626a307fa, type: 3}
+  audioClip: {fileID: 8300000, guid: 40ac5e4ed9c34ff4c958b2388cda88c0, type: 3}
 --- !u!114 &114449034678593610
 MonoBehaviour:
   m_ObjectHideFlags: 1
