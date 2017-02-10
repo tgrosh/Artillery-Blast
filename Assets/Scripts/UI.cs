@@ -60,20 +60,21 @@ public class UI : MonoBehaviour {
 
     public void Fire()
     {
+        FireButton fireButton = FindObjectOfType<FireButton>();
         Tank.localPlayer.Cmd_Fire(Tank.localPlayer.cannon.powerSlider.value);
-        FindObjectOfType<FireButton>().Cooldown();
+        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.cannon.reloadTime);
     }
 
     public void MoveRight()
     {
         Tank.localPlayer.Cmd_MoveRight();
-        FindObjectOfType<FireButton>().Cooldown();
+        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.movementCooldownTime);
     }
 
     public void MoveLeft()
     {
         Tank.localPlayer.Cmd_MoveLeft();
-        FindObjectOfType<FireButton>().Cooldown();
+        FindObjectOfType<FireButton>().Cooldown(Tank.localPlayer.movementCooldownTime);
     }
             
     public static void Log(string message)

@@ -8,9 +8,9 @@ public class FireButton : MonoBehaviour {
     public Button button;
     public Image buttonImage;
     public Image progressFill;
-    public float reloadTime;
 
-    bool reloading;
+    float cooldownTime;
+    public bool isOnCooldown;
     float currentReloadTime;
     ColorBlock origButtonColors;
 
@@ -19,32 +19,34 @@ public class FireButton : MonoBehaviour {
         origButtonColors = button.colors;
     }
 
-    public void Cooldown()
+    public void Cooldown(float cooldownTime)
     {
-        if (reloadTime > 0)
+        if (cooldownTime > 0)
         {
             progressFill.gameObject.SetActive(true);
             button.interactable = false;
-            reloading = true;
+            isOnCooldown = true;
+            this.cooldownTime = cooldownTime;
         }
     }
         
     // Update is called once per frame
     void Update () {
-		if (reloading && reloadTime > 0)
+		if (isOnCooldown && cooldownTime > 0)
         {
-            if (currentReloadTime > reloadTime)
+            if (currentReloadTime > cooldownTime)
             {
                 progressFill.gameObject.SetActive(false);
                 button.interactable = true;
                 currentReloadTime = 0;
-                reloading = false;              
+                isOnCooldown = false;              
             } else
             {
                 currentReloadTime += Time.deltaTime;
-                progressFill.fillAmount = currentReloadTime / reloadTime;
+                progressFill.fillAmount = currentReloadTime / cooldownTime;
                 progressFill.color = Color.Lerp(origButtonColors.disabledColor, origButtonColors.normalColor, progressFill.fillAmount);
             }
         }
 	}
+    
 }
