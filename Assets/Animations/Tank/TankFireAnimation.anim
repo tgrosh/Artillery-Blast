@@ -55,7 +55,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody
+    path: 
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -92,7 +92,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -129,7 +129,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody/WheelFrontRight
+    path: WheelFrontRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -166,7 +166,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody/WheelRearLeft
+    path: WheelRearLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -203,7 +203,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody/WheelRearRight
+    path: WheelRearRight
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -247,7 +247,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody
+    path: 
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -272,7 +272,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TankBody/Cannon/Barrel
+    path: Cannon/Barrel
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -283,43 +283,43 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 525154018
+    - path: 0
       attribute: 1
       script: {fileID: 0}
       classID: 4
       customType: 0
       isPPtrCurve: 0
-    - path: 3181958970
+    - path: 571028694
       attribute: 1
       script: {fileID: 0}
       classID: 4
       customType: 0
       isPPtrCurve: 0
-    - path: 525154018
+    - path: 0
       attribute: 4
       script: {fileID: 0}
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 3485054086
+    - path: 1721416502
       attribute: 4
       script: {fileID: 0}
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 4090324024
+    - path: 939914427
       attribute: 4
       script: {fileID: 0}
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 323905196
+    - path: 2364507456
       attribute: 4
       script: {fileID: 0}
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 682252860
+    - path: 2173261196
       attribute: 4
       script: {fileID: 0}
       classID: 4
@@ -390,7 +390,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -430,7 +430,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -476,7 +476,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -516,7 +516,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -562,7 +562,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -608,7 +608,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: TankBody
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -648,7 +648,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -688,7 +688,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -728,7 +728,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -768,7 +768,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: TankBody/WheelFrontRight
+    path: WheelFrontRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -808,7 +808,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: TankBody/WheelFrontRight
+    path: WheelFrontRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -848,7 +848,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: TankBody/WheelFrontRight
+    path: WheelFrontRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -888,7 +888,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: TankBody/WheelRearLeft
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -928,7 +928,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: TankBody/WheelRearLeft
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -968,7 +968,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: TankBody/WheelRearLeft
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1008,7 +1008,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: TankBody/WheelRearRight
+    path: WheelRearRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1048,7 +1048,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: TankBody/WheelRearRight
+    path: WheelRearRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1088,7 +1088,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: TankBody/WheelRearRight
+    path: WheelRearRight
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1116,7 +1116,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: TankBody/Cannon/Barrel
+    path: Cannon/Barrel
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1144,7 +1144,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: TankBody/Cannon/Barrel
+    path: Cannon/Barrel
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1172,7 +1172,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: TankBody/Cannon/Barrel
+    path: Cannon/Barrel
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -1182,8 +1182,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: TankBody
+    attribute: m_LocalEulerAngles.z
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1193,37 +1193,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: TankBody
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: TankBody
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: TankBody/WheelFrontRight
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: TankBody/WheelFrontRight
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1233,7 +1203,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: TankBody/WheelFrontRight
+    path: WheelRearLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1243,7 +1213,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: TankBody/WheelRearLeft
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1253,7 +1223,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: TankBody/WheelRearLeft
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1263,7 +1233,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: TankBody/WheelRearLeft
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1273,7 +1243,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: TankBody/WheelRearRight
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1283,7 +1253,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: TankBody/WheelRearRight
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1293,27 +1263,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: TankBody/WheelRearRight
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: TankBody/WheelFrontLeft
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontLeft
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1323,10 +1273,60 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: TankBody/WheelFrontLeft
+    path: WheelFrontRight
     classID: 4
     script: {fileID: 0}
-  m_HasGenericRootTransform: 0
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: WheelFrontRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: WheelFrontRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: WheelRearRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: WheelRearRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: WheelRearRight
+    classID: 4
+    script: {fileID: 0}
+  m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_IsEmpty: 0

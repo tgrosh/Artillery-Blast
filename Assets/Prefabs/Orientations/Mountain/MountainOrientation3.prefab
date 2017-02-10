@@ -264,7 +264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1253812992601576
 GameObject:
   m_ObjectHideFlags: 1
@@ -3097,6 +3097,7 @@ MonoBehaviour:
   playerText: {fileID: 114389067622841454}
   player: {fileID: 0}
   canvasGroup: {fileID: 0}
+  spawnSide: 1
 --- !u!114 &114056522107371086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3501,6 +3502,7 @@ MonoBehaviour:
   playerText: {fileID: 114073555434100508}
   player: {fileID: 0}
   canvasGroup: {fileID: 0}
+  spawnSide: 0
 --- !u!114 &114622966021102044
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -18,6 +18,7 @@ public class Tank : Explodable {
     public float clearFocusDelay = 2f;
     public TankCam cam;
     public GameObject tankFire;
+    public SpawnSide spawnSide;
     [SyncVar]
     public bool isClientReady;
 
@@ -28,9 +29,9 @@ public class Tank : Explodable {
     Vector3 spawnPosition;
     [SyncVar(hook="SpawnRotationHook")]
     Quaternion spawnRotation;
-    Animator tankAnimator;
-    
+    Animator tankAnimator;    
     bool exploded;
+    int movementPosition = 0;
 
     void Start()
     {
@@ -50,7 +51,7 @@ public class Tank : Explodable {
             cannon.powerSlider = GameObject.Find("PowerSlider").GetComponentInChildren<ArtillerySlider>();            
         }
 
-        tankAnimator = GetComponent<Animator>();
+        tankAnimator = transform.Find("TankBody").GetComponent<Animator>();
 
         if (Tank.OnTankReady != null)
         {
@@ -71,11 +72,100 @@ public class Tank : Explodable {
     {
         cam.FocusOn(transform, 20, 1f);
     }
-        
-    [Server]
+    
     public void Focus()
     {
         Rpc_Focus();
+    }
+    
+    public override void Explode()
+    {
+        exploded = true;
+        Rpc_Explode();
+    }
+    
+    public void UnFocus()
+    {
+        StartCoroutine(DelayedUnFocus());
+    }
+
+    [Command]
+    public void Cmd_SetClientReady()
+    {
+        isClientReady = true;
+    }
+
+    [Command]
+    public void Cmd_Fire(float power)
+    {
+        if (!cannon.reloading && !exploded)
+        {
+            cannon.Fire(power);
+            Rpc_Fire();
+        }
+    }
+
+    [Command]
+    public void Cmd_ReturnToLobby()
+    {
+        GameObject.FindObjectOfType<LobbyMan>().ServerReturnToLobby();
+    }
+
+    [Command]
+    public void Cmd_SetPosition()
+    {
+        if (transform.position == Vector3.zero)
+        {
+            //set tank position variables
+            Transform pos = LobbyMan.singleton.GetStartPosition();
+            spawnPosition = pos.position;
+            spawnRotation = pos.rotation;
+        }
+    }
+
+    [Command]
+    public void Cmd_MoveRight()
+    {
+        if (movementPosition < 1)
+        {
+            movementPosition++;
+            Rpc_MoveRight();
+        }
+    }
+
+    [Command]
+    public void Cmd_MoveLeft()
+    {
+        if (movementPosition > -1)
+        {
+            movementPosition--;
+            Rpc_MoveLeft();
+        }
+    }
+
+    [ClientRpc]
+    public void Rpc_MoveRight()
+    {
+        if (spawnSide == SpawnSide.Right)
+        {
+            tankAnimator.SetTrigger("MoveBackward");
+        } else
+        {
+            tankAnimator.SetTrigger("MoveForward");
+        }
+    }
+
+    [ClientRpc]
+    public void Rpc_MoveLeft()
+    {
+        if (spawnSide == SpawnSide.Right)
+        {
+            tankAnimator.SetTrigger("MoveForward");
+        }
+        else
+        {
+            tankAnimator.SetTrigger("MoveBackward");
+        }
     }
 
     [ClientRpc]
@@ -89,42 +179,13 @@ public class Tank : Explodable {
     {
         cam.ResetFocus();
     }
-
-    [Server]
-    public void UnFocus()
-    {
-        StartCoroutine(DelayedUnFocus());
-    }
-
+    
     [ClientRpc]
     public void Rpc_UnFocus()
     {
         cam.ClearFocus();
     }
-
-    IEnumerator DelayedUnFocus()
-    {
-        Rpc_ResetFocus();
-        yield return new WaitForSecondsRealtime(clearFocusDelay);
-        Rpc_UnFocus();
-    }
-
-    [Command]
-    public void Cmd_SetClientReady()
-    {
-        isClientReady = true;
-    }
-    
-    [Command] //server
-    public void Cmd_Fire(float power)
-    {
-        if (!cannon.reloading && !exploded)
-        {
-            cannon.Fire(power);
-            Rpc_Fire();
-        }
-    }
-
+        
     [ClientRpc]
     public void Rpc_Fire()
     {
@@ -147,12 +208,30 @@ public class Tank : Explodable {
             StartCoroutine(EndGame());
         }
     }
+    
+    void SpawnPositionHook(Vector3 position)
+    {
+        //hook from syncvar
+        transform.position = position;
+    }
 
-    [Client]
+    void SpawnRotationHook(Quaternion rotation)
+    {
+        //hook from syncvar
+        transform.rotation = rotation;
+    }
+
+    IEnumerator DelayedUnFocus()
+    {
+        Rpc_ResetFocus();
+        yield return new WaitForSecondsRealtime(clearFocusDelay);
+        Rpc_UnFocus();
+    }
+    
     IEnumerator EndGame()
     {
         GameManager.instance.isGameOver = true;
-                
+
         yield return new WaitForSecondsRealtime(3f);
 
         Tank.localPlayer.Zoom();
@@ -165,41 +244,5 @@ public class Tank : Explodable {
             GameObject.FindObjectOfType<UI>().YouWin();
         }
     }
-    
-    [Command]
-    public void Cmd_ReturnToLobby()
-    {
-        GameObject.FindObjectOfType<LobbyMan>().ServerReturnToLobby();
-    }
-
-    [Server]
-    public override void Explode()
-    {
-        exploded = true;
-        Rpc_Explode();
-    }
-    
-    [Command]
-    public void Cmd_SetPosition()
-    {
-        if (transform.position == Vector3.zero)
-        {
-            //set tank position variables
-            Transform pos = LobbyMan.singleton.GetStartPosition();
-            spawnPosition = pos.position;
-            spawnRotation = pos.rotation;          
-        }
-    }
-
-    void SpawnPositionHook(Vector3 position)
-    {
-        //hook from syncvar
-        transform.position = position;
-    }
-
-    void SpawnRotationHook(Quaternion rotation)
-    {
-        //hook from syncvar
-        transform.rotation = rotation;
-    }    
 }
+

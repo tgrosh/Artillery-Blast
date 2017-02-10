@@ -245,7 +245,6 @@ GameObject:
   - component: {fileID: 114914568922617132}
   - component: {fileID: 114223488034781794}
   - component: {fileID: 114974105308665824}
-  - component: {fileID: 95224946381096422}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -492,15 +491,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7496244, y: -5.38, z: -10.899744}
+  m_LocalRotation: {x: -0, y: 0.7071065, z: -0, w: 0.7071072}
+  m_LocalPosition: {x: -8.071101, y: 2.191, z: -0.32651138}
   m_LocalScale: {x: 0.18333334, y: 0.18333334, z: 0.18333334}
   m_Children:
   - {fileID: 4352944778748440}
   - {fileID: 22467320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &488724
 Transform:
   m_ObjectHideFlags: 1
@@ -1536,6 +1535,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4352944778748440}
+  - component: {fileID: 95991806949893862}
   m_Layer: 0
   m_Name: TankBody
   m_TagString: Untagged
@@ -1565,13 +1565,13 @@ Transform:
   m_Father: {fileID: 477806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95224946381096422
+--- !u!95 &95991806949893862
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168856}
+  m_GameObject: {fileID: 1473275839706072}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b296e2ce5709ad044b38acb10baf8ac2, type: 2}
@@ -1651,7 +1651,6 @@ MonoBehaviour:
   cannonReloadSound: {fileID: 8228828}
   projectileSpawner: {fileID: 473312}
   reloadTime: 3
-  reloadImage: {fileID: 11408498}
   powerScale: 1.25
   angleSlider: {fileID: 0}
   powerSlider: {fileID: 0}
@@ -1681,8 +1680,7 @@ MonoBehaviour:
   clearFocusDelay: 1.5
   cam: {fileID: 0}
   tankFire: {fileID: 1069379384950262, guid: 241146f86dada0a4bb2a3675582fbe36, type: 2}
-  tankPartSmoke: {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8,
-    type: 2}
+  isClientReady: 0
 --- !u!114 &114745356578338024
 MonoBehaviour:
   m_ObjectHideFlags: 1

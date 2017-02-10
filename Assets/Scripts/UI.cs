@@ -61,6 +61,19 @@ public class UI : MonoBehaviour {
     public void Fire()
     {
         Tank.localPlayer.Cmd_Fire(Tank.localPlayer.cannon.powerSlider.value);
+        FindObjectOfType<FireButton>().Cooldown();
+    }
+
+    public void MoveRight()
+    {
+        Tank.localPlayer.Cmd_MoveRight();
+        FindObjectOfType<FireButton>().Cooldown();
+    }
+
+    public void MoveLeft()
+    {
+        Tank.localPlayer.Cmd_MoveLeft();
+        FindObjectOfType<FireButton>().Cooldown();
     }
             
     public static void Log(string message)

@@ -7,6 +7,7 @@ public class SpawnPosition : MonoBehaviour {
     public Text playerText;
     public Tank player;
     public CanvasGroup canvasGroup;
+    public SpawnSide spawnSide;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,13 @@ public class SpawnPosition : MonoBehaviour {
             player = tank;
             playerText.text = player.playerName;
             playerText.color = player.playerColor;
+            tank.spawnSide = spawnSide;
         }
     }
+}
+
+public enum SpawnSide
+{
+    Left,
+    Right
 }

@@ -3323,6 +3323,7 @@ MonoBehaviour:
   playerText: {fileID: 114475132470580854}
   player: {fileID: 0}
   canvasGroup: {fileID: 0}
+  spawnSide: 0
 --- !u!114 &114282233799342948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3711,6 +3712,7 @@ MonoBehaviour:
   playerText: {fileID: 114326965171389108}
   player: {fileID: 0}
   canvasGroup: {fileID: 0}
+  spawnSide: 1
 --- !u!114 &114673859334091360
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -16,11 +16,10 @@ public class FireButton : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        button.onClick.AddListener(() => buttonOnClick());
         origButtonColors = button.colors;
     }
 
-    private void buttonOnClick()
+    public void Cooldown()
     {
         if (reloadTime > 0)
         {
@@ -29,7 +28,7 @@ public class FireButton : MonoBehaviour {
             reloading = true;
         }
     }
-    
+        
     // Update is called once per frame
     void Update () {
 		if (reloading && reloadTime > 0)
