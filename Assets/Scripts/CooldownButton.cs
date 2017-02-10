@@ -7,7 +7,6 @@ public class CooldownButton : MonoBehaviour {
     public Image progressFill;
     
     Button button;
-    Image buttonImage;
     float cooldownTime;
     public bool isOnCooldown;
     float currentCooldownTime;
@@ -30,7 +29,6 @@ public class CooldownButton : MonoBehaviour {
     void Start()
     {
         button = GetComponent<Button>();
-        buttonImage = GetComponent<Image>();
         origButtonColors = button.colors;
     }
 

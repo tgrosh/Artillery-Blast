@@ -59,9 +59,7 @@ public class ArtillerySlider: MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	{
 		var ray = GetComponentInParent<GraphicRaycaster>();
 		var input = FindObjectOfType<StandaloneInputModule>();
-
-		var text = GetComponentInChildren<Text>();
-
+        
         if (ray != null && input != null)
         {
             while (Application.isPlaying)
