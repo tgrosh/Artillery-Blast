@@ -2613,6 +2613,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e550e76ca3e555f48930113292bbf0cb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &268768989
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912532309283242, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &270211770 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4272065086694580, guid: 04d30f06125076a408d13453f6de408f,
