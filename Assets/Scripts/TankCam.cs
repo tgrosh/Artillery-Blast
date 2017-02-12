@@ -7,7 +7,7 @@ public class TankCam : FreeLookCam {
     [Range(0,90)]
     public float panRange;
     public Transform focusTarget;
-    public float focusSpeed;
+    public float defaultFocusSpeed = 1f; //default for inspector
 
     Quaternion origDollyRotation;
     Quaternion origRotation;
@@ -22,6 +22,7 @@ public class TankCam : FreeLookCam {
     Quaternion targetRotation;
     Quaternion targetPivotRotation;
     float focusStartTime;
+    float focusSpeed;
 
     // Use this for initialization
     protected override void Start () {
@@ -33,6 +34,7 @@ public class TankCam : FreeLookCam {
         origPivotRotation = m_Pivot.transform.localRotation;
         origCamFieldOfView = Camera.main.fieldOfView;
         zoomInDistance = origCamFieldOfView;
+        focusSpeed = defaultFocusSpeed;
 
         base.Start();
     }
@@ -106,8 +108,9 @@ public class TankCam : FreeLookCam {
         transform.localRotation = Quaternion.Euler(currentRotation);
     } 
 
-    public void FocusOn(Transform target, float zoom, float timeScale)
+    public void FocusOn(Transform target, float focusTime, float zoom, float timeScale)
     {
+        focusSpeed = focusTime;
         focusTarget = target;
         focusStartTime = Time.fixedTime;
         zoomInDistance = zoom;
@@ -116,6 +119,7 @@ public class TankCam : FreeLookCam {
 
     public void ClearFocus()
     {
+        focusSpeed = defaultFocusSpeed;
         focusTarget = null;
         focusStartTime = Time.fixedTime;
         ResetFocus();

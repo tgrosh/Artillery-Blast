@@ -1683,6 +1683,7 @@ MonoBehaviour:
   spawnSide: 0
   isClientReady: 0
   movementCooldownTime: 2
+  endGameZoomTime: 1
 --- !u!114 &114745356578338024
 MonoBehaviour:
   m_ObjectHideFlags: 1

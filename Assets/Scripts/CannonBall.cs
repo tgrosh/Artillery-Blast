@@ -8,6 +8,7 @@ public class CannonBall : Explodable
 {
     public float proximitySensorDelay;
     public AudioClip proximitySound;
+    public float proxFocusTime;
 
     float currentProximitySensorDelay;
     bool proximitySensorActive;
@@ -38,7 +39,7 @@ public class CannonBall : Explodable
             if (proximityTarget != null)
             {
                 Rpc_ProximityAlert();
-                proximityTarget.Focus();
+                proximityTarget.Focus(proxFocusTime);
             }
         }
     }

@@ -84,6 +84,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 debugging = !debugging;
             }
             m_Camera.gameObject.SetActive(debugging);
+            m_CharacterController.enabled = debugging;
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed

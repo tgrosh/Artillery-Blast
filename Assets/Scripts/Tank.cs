@@ -22,6 +22,7 @@ public class Tank : Explodable {
     [SyncVar]
     public bool isClientReady;
     public float movementCooldownTime;
+    public float endGameZoomTime;
 
     public static event TankReadyEventHandler OnTankReady;
     public delegate void TankReadyEventHandler(Tank tank);    
@@ -69,14 +70,14 @@ public class Tank : Explodable {
     {
     }
         
-    public void Zoom()
+    public void Zoom(float zoomTime)
     {
-        cam.FocusOn(transform, 20, 1f);
+        cam.FocusOn(transform, zoomTime, 20, 1f);
     }
     
-    public void Focus()
+    public void Focus(float focusTime)
     {
-        Rpc_Focus();
+        Rpc_Focus(focusTime);
     }
     
     public override void Explode()
@@ -170,9 +171,9 @@ public class Tank : Explodable {
     }
 
     [ClientRpc]
-    public void Rpc_Focus()
+    public void Rpc_Focus(float focusTime)
     {
-        cam.FocusOn(transform, 10, slowMoTimeScale);
+        cam.FocusOn(transform, focusTime, 10, slowMoTimeScale);
     }
 
     [ClientRpc]
@@ -235,7 +236,7 @@ public class Tank : Explodable {
 
         yield return new WaitForSecondsRealtime(3f);
 
-        Tank.localPlayer.Zoom();
+        Tank.localPlayer.Zoom(endGameZoomTime);
         if (isLocalPlayer)
         {
             GameObject.FindObjectOfType<UI>().YouLose();

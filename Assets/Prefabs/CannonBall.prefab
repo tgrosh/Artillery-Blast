@@ -136,6 +136,7 @@ MonoBehaviour:
   explosionRadius: 0
   proximitySensorDelay: 2
   proximitySound: {fileID: 8300000, guid: 344ed713dbd04a34a9ad2f61e5f931b2, type: 3}
+  proxFocusTime: 0.25
 --- !u!135 &13525604
 SphereCollider:
   m_ObjectHideFlags: 1

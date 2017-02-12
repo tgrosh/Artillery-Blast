@@ -2652,6 +2652,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1415761303281542, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143455527311954814, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3bd3d9fd6e7e33442ae41dca83dfb27d, type: 2}
   m_IsPrefabParent: 0
@@ -18066,6 +18075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599378462}
   - component: {fileID: 1599378463}
+  - component: {fileID: 1599378464}
   m_Layer: 5
   m_Name: UIPanel
   m_TagString: Untagged
@@ -18109,6 +18119,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!225 &1599378464
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599378461}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!4 &1607926793 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4858578109338140, guid: da62d217c1d14d34f8081be4e46f74cc,

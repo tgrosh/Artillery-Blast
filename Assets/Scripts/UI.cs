@@ -17,6 +17,7 @@ public class UI : MonoBehaviour {
     CooldownButton moveLeftButton;
     CooldownButton moveRightButton;
     CooldownButton fireButton;
+    bool debugging;
 
     // Use this for initialization
     void Start () {
@@ -30,6 +31,26 @@ public class UI : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Fire();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            MoveLeft();
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            MoveRight();
+        }
+        if (Input.GetKeyUp(KeyCode.F10))
+        {
+            debugging = !debugging;
+        }
+
+        if (debugging)
+        {
+            uiPanel.GetComponent<CanvasGroup>().alpha = 0f;
+        } else
+        {
+            uiPanel.GetComponent<CanvasGroup>().alpha = 1f;
         }
     }
 
