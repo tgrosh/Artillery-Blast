@@ -4609,6 +4609,7 @@ MonoBehaviour:
   isClientReady: 0
   movementCooldownTime: 2
   endGameZoomTime: 1
+  movementPosition: 0
 --- !u!114 &114928744647550096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4678,7 +4679,7 @@ ParticleSystem:
   lengthInSec: 5
   speed: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   autoRandomSeed: 1
   startDelay:
@@ -4723,7 +4724,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1969707949
+  randomSeed: -1997863853
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4896,7 +4897,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.24313726, g: 0.24313726, b: 0.24313726, a: 1}
+      maxColor: {r: 0.57254905, g: 0.57254905, b: 0.57254905, a: 1}
       minMaxState: 0
     startSize:
       scalar: 0.25

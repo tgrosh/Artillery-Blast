@@ -1703,6 +1703,90 @@ AnimationClip:
     path: TreadRight
     classID: 23
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: -2.0638163
+        outSlope: -2.0638163
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: InitialModule.startSize.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.25
+        inSlope: 0
+        outSlope: 9
+        tangentMode: 65
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: -1.6644483
+        outSlope: -1.6644483
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: InitialModule.startSpeed.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 2
+        inSlope: 0
+        outSlope: 576
+        tangentMode: 65
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 50
+        inSlope: -74.23418
+        outSlope: -74.23418
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: EmissionModule.rateOverTime.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -1752,6 +1836,24 @@ AnimationClip:
       script: {fileID: 0}
       classID: 23
       customType: 22
+      isPPtrCurve: 0
+    - path: 3627463014
+      attribute: 3638086055
+      script: {fileID: 0}
+      classID: 198
+      customType: 27
+      isPPtrCurve: 0
+    - path: 3627463014
+      attribute: 1063861377
+      script: {fileID: 0}
+      classID: 198
+      customType: 27
+      isPPtrCurve: 0
+    - path: 3627463014
+      attribute: 2883525743
+      script: {fileID: 0}
+      classID: 198
+      customType: 27
       isPPtrCurve: 0
     - path: 2856807235
       attribute: 176787089
@@ -8068,6 +8170,90 @@ AnimationClip:
     attribute: m_LocalRotation.w
     path: TreadWheelFront2
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: -2.0638163
+        outSlope: -2.0638163
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: InitialModule.startSize.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0.25
+        inSlope: 0
+        outSlope: 9
+        tangentMode: 65
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 1
+        inSlope: -1.6644483
+        outSlope: -1.6644483
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: InitialModule.startSpeed.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 2
+        inSlope: 0
+        outSlope: 576
+        tangentMode: 65
+      - serializedVersion: 2
+        time: 0.083333336
+        value: 50
+        inSlope: -74.23418
+        outSlope: -74.23418
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: EmissionModule.rateOverTime.scalar
+    path: Exhaust/ExhaustSystem
+    classID: 198
     script: {fileID: 0}
   m_EulerEditorCurves:
   - curve:

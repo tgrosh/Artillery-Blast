@@ -204,6 +204,13 @@ public class Tank : Explodable {
     public void Rpc_Explode()
     {
         tankAnimator.StopPlayback();
+        foreach (Transform childTransform in transform.FindChild("TankBody").transform)
+        {
+            if (childTransform.CompareTag("TankTread"))
+            {
+                Destroy(childTransform.gameObject);
+            }
+        }
         exploded = true;
         base.Explode();
         cannon.angleSlider = null;
