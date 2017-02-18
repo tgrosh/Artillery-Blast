@@ -372,7 +372,8 @@ MonoBehaviour:
   m_MinPlayers: 1
   m_LobbyPlayerPrefab: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
     type: 2}
-  m_GamePlayerPrefab: {fileID: 168856, guid: 06901145f32c1b34ba75ccd41728639f, type: 2}
+  m_GamePlayerPrefab: {fileID: 1023019413260428, guid: f077fa76537abdd49966cab81c116d5f,
+    type: 2}
   m_LobbyScene: NetworkLobby
   m_PlayScene: BattleSceneMountains
   lobbySlots: []

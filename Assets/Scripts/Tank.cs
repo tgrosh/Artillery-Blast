@@ -23,6 +23,8 @@ public class Tank : Explodable {
     public bool isClientReady;
     public float movementCooldownTime;
     public float endGameZoomTime;
+    [SyncVar]
+    public int movementPosition = 0;
 
     public static event TankReadyEventHandler OnTankReady;
     public delegate void TankReadyEventHandler(Tank tank);    
@@ -33,8 +35,7 @@ public class Tank : Explodable {
     Quaternion spawnRotation;
     Animator tankAnimator;    
     bool exploded;
-    int movementPosition = 0;
-
+    
     void Start()
     {
         foreach (Transform childTransform in transform.FindChild("TankBody").transform)
@@ -151,9 +152,11 @@ public class Tank : Explodable {
         if (spawnSide == SpawnSide.Right)
         {
             tankAnimator.SetTrigger("MoveBackward");
+            StartCoroutine(DelayedAnimationPosition(1f, movementPosition * -1));
         } else
-        {
+        {   
             tankAnimator.SetTrigger("MoveForward");
+            StartCoroutine(DelayedAnimationPosition(1f, movementPosition));
         }
     }
 
@@ -163,10 +166,12 @@ public class Tank : Explodable {
         if (spawnSide == SpawnSide.Right)
         {
             tankAnimator.SetTrigger("MoveForward");
+            StartCoroutine(DelayedAnimationPosition(1f, movementPosition * -1));
         }
         else
         {
             tankAnimator.SetTrigger("MoveBackward");
+            StartCoroutine(DelayedAnimationPosition(1f, movementPosition));
         }
     }
 
@@ -221,6 +226,12 @@ public class Tank : Explodable {
     {
         //hook from syncvar
         transform.rotation = rotation;
+    }
+
+    IEnumerator DelayedAnimationPosition(float delay, int position)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        tankAnimator.SetInteger("position", position);
     }
 
     IEnumerator DelayedUnFocus()
