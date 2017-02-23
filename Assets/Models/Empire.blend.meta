@@ -6,10 +6,24 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: EmpireState_lp
+    100004: EmpireState_lp_001
+    100006: EmpireState_lp_002
     400000: //RootNode
+    400002: EmpireState_lp
+    400004: EmpireState_lp_001
+    400006: EmpireState_lp_002
     2300000: //RootNode
+    2300002: EmpireState_lp
+    2300004: EmpireState_lp_001
+    2300006: EmpireState_lp_002
     3300000: //RootNode
+    3300002: EmpireState_lp
+    3300004: EmpireState_lp_001
+    3300006: EmpireState_lp_002
     4300000: EmpireState_lp
+    4300002: EmpireState_lp_001
+    4300004: EmpireState_lp_002
     7400000: Default Take
     9500000: //RootNode
   materials:
